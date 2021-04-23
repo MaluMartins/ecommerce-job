@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+
+body {
+    padding: 0px!important;
+    margin: 0px!important; 
+    font-family: 'Poppins', sans-serif!important;
+}
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Design da navbar*/
+.navbar {
+    background-color: #0275d8;
+    color: white;
+    border-radius: 0px!important;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-nav h1 {
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: white;
+    max-height: 4em;
+    max-width: 4em;
+    float: left;
+}
+
+.carrinho {
+    max-height: 3.5em;
+    max-width: 3.5em;
+    float: right;
+}
+
+.item-icon {
+    max-height: 2em;
+    max-width: 2em;
+    margin-right: 0.6em;
+}
+
+.nav-item h2 {
+    color: black;
+    display: inline;
+}
+
+.item-departamento {
+    display: flex;
+    align-items: center;
+    padding: 0.4em;
+    background-color: white;
+    margin: 0.4em 0.4em 0.4em 0;
+    border-radius: 4px;
+}
+
+a {
+    color: black!important;
+    font-size: 1.3rem;
+}
+
+.color-item {
+    background-color: #0275d8;
+    margin: 1em 1em 1em 0;
+    padding: 0.4em;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.color-item p {
+    vertical-align: center;
+    font-size: 1.2em; 
+}
+
+.form-inline {
+    width: 100%;
+}
+
+/* transformar navbar em sidebar para mobile */
+@media (max-width: 992px) {
+    
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -75%;
+        transition: all 0.1s ease;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        margin-top: 0px;
+        bottom: 0;
+        left: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+        flex-direction: column;
+        height: 100%;
+        width: 75%;
+        transition: left 0.1s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: rgb(233, 233, 233);
+    }
+}
+
+/*Design dos cards de produtos*/
+.card {
+    width: 10rem;
+    height: 20rem;
+}
+
+.card-img-top {
+    /*max-width: 10em;
+    max-height: 10em;*/
+}

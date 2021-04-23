@@ -7,13 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-commerce</title>
 
-  <link rel="stylesheet" href="./arquivos-CSS/style-azul.css">
+  <link rel="stylesheet" href="./arquivos-CSS/pagina-inicial/style-azul.css">
 
 
-  <!--Link para bootsnipp (para layout responsivo)-->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <!--Link para bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -28,11 +24,11 @@
     <!--Navbar do bootstrap-->
     <nav class="navbar navbar-expand-lg">
       <div class="main-nav">
-        <img src="imagens/options.svg" class="navbar-toggler" type="button" data-toggle="collapse"
+        <img src="./imagens/icones-versao-preta/options.svg" class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation"></img>
         <h1>Nome da loja</h1>
-        <img src="./imagens/carrinho.svg" alt="carrinho" class="carrinho">
+        <img src="./imagens/icones-versao-preta/carrinho.svg" alt="carrinho" class="carrinho">
       </div>
 
       <form class="form-inline my-2 my-lg-0">
@@ -41,35 +37,47 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <img src="./imagens/close.svg" class="navbar-toggler" type="button" data-toggle="collapse"
+          <img src="./imagens/icones-versao-preta/close.svg" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation"></img>
           <li class="nav-item">
             <h2>Departamentos</h2>
           </li>
           <li class="nav-item">
-            <img src="./imagens/celular.svg" class="item-icon" alt="Celular">
-            <a class="nav-link" href="#">Celular e Smartphone</a>
+            <div class="item-departamento">
+              <img src="./imagens/icones-versao-preta/celular.svg" class="item-icon" alt="Celular">
+              <a class="nav-link" href="#">Celular e Smartphone</a>
+            </div>
           </li>
           <li class="nav-item">
-            <img src="./imagens/eletrodomestico.svg" class="item-icon" alt="Eletrodomésticos">
-            <a class="nav-link" href="#">Eletrodomésticos</a>
+            <div class="item-departamento">
+              <img src="./imagens/icones-versao-preta/eletrodomestico.svg" class="item-icon" alt="Eletrodomésticos">
+              <a class="nav-link" href="#">Eletrodomésticos</a>
+            </div>
           </li>
           <li class="nav-item">
-            <img src="./imagens/tv.svg" class="item-icon" alt="TV">
-            <a class="nav-link" href="#">TV e Vídeo</a>
+            <div class="item-departamento">
+              <img src="./imagens/icones-versao-preta/tv.svg" class="item-icon" alt="TV">
+              <a class="nav-link" href="#">TV e Vídeo</a>
+            </div>
           </li>
           <li class="nav-item">
-            <img src="./imagens/informatica.svg" class="item-icon" alt="Informática">
-            <a class="nav-link" href="#">Informática</a>
+            <div class="item-departamento">
+              <img src="./imagens/icones-versao-preta/informatica.svg" class="item-icon" alt="Informática">
+              <a class="nav-link" href="#">Informática</a>
+            </div>
           </li>
           <li class="nav-item">
-            <img src="./imagens/sofa.svg" class="item-icon" alt="Móveis">
-            <a class="nav-link" href="#">Móveis</a>
+            <div class="item-departamento">
+              <img src="./imagens/icones-versao-preta/sofa.svg" class="item-icon" alt="Móveis">
+              <a class="nav-link" href="#">Móveis</a>
+            </div>
           </li>
           <li class="nav-item">
-            <img src="./imagens/auto.svg" class="item-icon" alt="Automotivo">
-            <a class="nav-link" href="#">Automotivo</a>
+            <div class="item-departamento">
+              <img src="./imagens/icones-versao-preta/auto.svg" class="item-icon" alt="Automotivo">
+              <a class="nav-link" href="#">Automotivo</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -83,12 +91,20 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
+          <li class="color-item">
+            <img src="./imagens/icones-versao-preta/whatsapp.svg" class="item-icon" alt="Whatsapp">
+            <p>(Whatsapp da empresa)</p>
+          </li>
+          <li class="color-item">
+            <img src="./imagens/icones-versao-preta/truck.svg" class="item-icon" alt="Caminhão">
+            <p>Rastrear pedido</p>
+          </li>
         </ul>
-
       </div>
     </nav>
 
-
+    <!--Cards + carousel bootstrap -->
+    
 
 
     <!--Links do bootstrap-->

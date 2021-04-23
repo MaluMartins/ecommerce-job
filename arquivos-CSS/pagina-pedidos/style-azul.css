@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+
+body {
+    padding: 0px!important;
+    margin: 0px!important; 
+    font-family: 'Poppins', sans-serif!important;
+}
+
+.estrela, .meia-estrela {
+    max-width: 1rem;
+    max-height: 1em;
+}
+
+.share {
+    max-width: 2rem;
+    max-height: 2em;
+}
