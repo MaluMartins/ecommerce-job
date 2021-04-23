@@ -41,10 +41,14 @@ body {
     float: right;
 }
 
-
+.item-icon {
+    max-height: 1.5em;
+    max-width: 1.5em;
+}
 
 .nav-item {
     color: black;
+    display: inline;
 }
 
 a {
@@ -65,7 +69,7 @@ a {
         top: 0;
         bottom: 0;
         left: -45%;
-        transition: all 0.2s ease;
+        transition: all 0.1s ease;
     }
 
     .navbar-collapse.show .navbar-nav {
@@ -74,12 +78,11 @@ a {
         margin-top: 0px;
         bottom: 0;
         left: 0;
-        padding-left: 2em;
+        padding-left: 3em;
         flex-direction: column;
         height: 100%;
         width: 60%;
-        text-align: center;
-        transition: left 0.35s ease;
+        transition: left 0.1s ease;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         background-color: white;
     }
