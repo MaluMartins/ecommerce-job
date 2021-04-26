@@ -7,14 +7,40 @@ body {
 }
 
 /*Design do heading do produto*/
+.title {
+    margin: 1.5rem 0 0 1rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 0 1rem;
+}
+
+.heading p {
+    font-size: .7rem;
+}
+
+.recomendacoes {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
 .estrela, .meia-estrela {
-    max-width: 1rem;
-    max-height: 1em;
+    max-width: .8rem;
+    max-height: .8em;
 }
 
 .share {
-    max-width: 2rem;
-    max-height: 2em;
+    max-width: 1rem;
+    max-height: 1em;
+    margin: 0;
+    float: right;
+}
+
+.preco {
+    font-size: 2rem;
 }
 
 /*Design da imagem do produto*/
@@ -61,11 +87,69 @@ body {
 }
 
 /*Preço e botão comprar*/
-.credit-card, .icon-carrinho {
+.container-pagamento {
+    margin: 1.5rem 0 0 1rem;
+}
+
+.container-preco {
+    display: flex;
+    align-items: right;
+}
+
+.pagamento p {
+    margin: 0px!important;
+}
+
+.credit-card {
+    max-height: 3rem;
+    max-width: 3rem;
+    margin-right: 1rem;
+}
+
+.icon-carrinho {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    float: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.btn-compra, .btn-carrinho {
+    padding: .5rem;
+    width: 95%;
+    border-radius: 4px;
+}
+
+.btn-compra {
+    background-color: #2b9eff;
+    color: white;
+    border: none;
+}
+
+.btn-carrinho {
+    background-color: white;
+    border: solid #2b9eff;
+}
+
+.main-avaliacao {
+    vertical-align: middle;
+}
+
+row {
+    margin: 2em;
+    padding: 2em;
+    border-color: rgb(66, 66, 66);
+}
+
+.big-star {
     max-height: 3rem;
     max-width: 3rem;
 }
 
-button {
-    background-color: #2b9eff;
+.avaliacoes {
+    margin-left: 2rem;
 }
