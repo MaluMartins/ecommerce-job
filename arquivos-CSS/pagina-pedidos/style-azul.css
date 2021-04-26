@@ -139,11 +139,6 @@ body {
     vertical-align: middle;
 }
 
-row {
-    margin: 2em;
-    padding: 2em;
-    border-color: rgb(66, 66, 66);
-}
 
 .big-star {
     max-height: 3rem;
@@ -152,4 +147,34 @@ row {
 
 .avaliacoes {
     margin-left: 2rem;
+}
+
+/*Design do carrossel e cards de produtos*/
+
+.card-group {
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between!important;
+}
+
+.card-produto {
+    width: 40%;
+    height: 60%;
+}
+
+.ver-mais {
+    display: flex;
+    align-items: center;
+    background-color: #2b9eff;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.ver-mais a {
+    color: white!important;
+}
+
+.icon-lupa {
+    max-height: 1.5em;
+    max-width: 1.5em;
 }
