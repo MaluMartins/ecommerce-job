@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {
     padding: 0px!important;
     margin: 0px!important; 
     font-family: 'Poppins', sans-serif!important;
+    background-color: white;
 }
 
-.heading, .avaliacoes, .info-text, .texto-avaliacoes {
-    margin-left: 1.5rem!important;
+.heading, .info-text, .texto-avaliacoes {
+    margin-left: 1rem!important;
 }
 
 :root {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 /*Design da navbar*/
@@ -29,20 +31,21 @@ body {
 }
 
 .main-nav h1 {
+    font-family: 'Fredoka One';
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .navbar-toggler {
     background-color: white;
-    max-height: 4em;
-    max-width: 4em;
+    max-height: 2.5em;
+    max-width: 3em;
     float: left;
 }
 
 .carrinho {
-    max-height: 3.5em;
-    max-width: 3.5em;
+    max-height: 2.5em;
+    max-width: 2.5em;
     float: right;
 }
 
@@ -165,6 +168,11 @@ a {
  /*Página de produtos*/
 
 /*Design do heading do produto*/
+.title-share {
+    display: flex;
+    justify-content: space-between;
+}
+
 .title {
     margin: 1.5rem 0 0 1rem;
 }
@@ -186,11 +194,52 @@ a {
     max-height: 1.5em;
 }
 
-.share {
+.star-text p {
+    margin: 1rem 0 0 0!important;
+}
+
+/*Botão de compartilhar*/
+  
+.share #collapseTwo {
+    position: absolute;
+    z-index: 1;
+}
+
+.title-share {
+    margin-top: 1rem;
+}
+
+.share .card-header {
+    width: 5rem;
+    background-color: white!important;
+    border: none!important;
+    margin-right: 1rem;
+}
+
+.collapse-share { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.share-card-body {
+    padding: 1rem;
+    margin: 0 2rem 0 1rem;
+    max-height: 20rem;
+    max-width: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 0 .3em rgb(175, 175, 175);
+}
+
+.share #collaspseTwo {
+    position: absolute;
+    z-index: 1;
+}
+
+.media-icon {
     max-width: 2rem;
-    max-height: 2em;
-    margin: 0 2rem 0 0;
-    float: right;
+    max-height: 2rem;
+    margin: .5rem 0 .5rem 0;
 }
 
 .preco {
@@ -254,6 +303,10 @@ a {
     margin: 0px!important;
 }
 
+.pagamento a {
+    color: blue!important;
+}
+
 .credit-card {
     max-height: 3rem;
     max-width: 3rem;
@@ -292,14 +345,21 @@ a {
 
 /*Parte de informações do produto e avaliações*/
 
-.main-avaliacao {
-    vertical-align: middle;
+.avaliacoes {
+    margin-right: 2rem;
+}
+
+.stars-number {
+    margin-left: 2rem;
+    padding: 1rem 0 0 2rem;
+    border-left: solid rgb(138, 138, 138);
 }
 
 .avaliacoes-info {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
 }
 
 .big-star {
