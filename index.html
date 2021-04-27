@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-commerce</title>
 
-  <link rel="stylesheet" href="./arquivos-CSS/pagina-inicial/style-azul.css">
+  <link rel="stylesheet" href="./css/style-azul.css">
 
 
 
@@ -24,20 +24,20 @@
     <!--Navbar do bootstrap-->
     <nav class="navbar navbar-expand-lg">
       <div class="main-nav">
-        <img src="./imagens/icones-versao-branca/options-branco.png" class="navbar-toggler" type="button" data-toggle="collapse"
+        <img src="./img/icones-versao-branca/options-branco.png" class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation"></img>
         <h1>Nome da loja</h1>
-        <img src="./imagens/icones-versao-branca/carrinho-branco.png" alt="carrinho" class="carrinho">
+        <img src="./img/icones-versao-branca/carrinho-branco.png" alt="carrinho" class="carrinho">
       </div>
 
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
       </form>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <img src="./imagens/icones-versao-preta/close.svg" class="navbar-toggler" type="button" data-toggle="collapse"
+          <img src="./img/icones-versao-preta/close.svg" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation"></img>
           <li class="nav-item">
@@ -45,37 +45,37 @@
           </li>
           <li class="nav-item">
             <div class="item-departamento">
-              <img src="./imagens/icones-versao-preta/celular.svg" class="item-icon" alt="Celular">
+              <img src="./img/icones-versao-preta/celular.svg" class="item-icon" alt="Celular">
               <a class="nav-link" href="#">Celular e Smartphone</a>
             </div>
           </li>
           <li class="nav-item">
             <div class="item-departamento">
-              <img src="./imagens/icones-versao-preta/eletrodomestico.svg" class="item-icon" alt="Eletrodomésticos">
+              <img src="./img/icones-versao-preta/eletrodomestico.svg" class="item-icon" alt="Eletrodomésticos">
               <a class="nav-link" href="#">Eletrodomésticos</a>
             </div>
           </li>
           <li class="nav-item">
             <div class="item-departamento">
-              <img src="./imagens/icones-versao-preta/tv.svg" class="item-icon" alt="TV">
+              <img src="./img/icones-versao-preta/tv.svg" class="item-icon" alt="TV">
               <a class="nav-link" href="#">TV e Vídeo</a>
             </div>
           </li>
           <li class="nav-item">
             <div class="item-departamento">
-              <img src="./imagens/icones-versao-preta/informatica.svg" class="item-icon" alt="Informática">
+              <img src="./img/icones-versao-preta/informatica.svg" class="item-icon" alt="Informática">
               <a class="nav-link" href="#">Informática</a>
             </div>
           </li>
           <li class="nav-item">
             <div class="item-departamento">
-              <img src="./imagens/icones-versao-preta/sofa.svg" class="item-icon" alt="Móveis">
+              <img src="./img/icones-versao-preta/sofa.svg" class="item-icon" alt="Móveis">
               <a class="nav-link" href="#">Móveis</a>
             </div>
           </li>
           <li class="nav-item">
             <div class="item-departamento">
-              <img src="./imagens/icones-versao-preta/auto.svg" class="item-icon" alt="Automotivo">
+              <img src="./img/icones-versao-preta/auto.svg" class="item-icon" alt="Automotivo">
               <a class="nav-link" href="#">Automotivo</a>
             </div>
           </li>
@@ -92,15 +92,15 @@
             </div>
           </li>
           <li class="color-item">
-            <img src="./imagens/icones-versao-preta/whatsapp.svg" class="item-icon" alt="Whatsapp">
+            <img src="./img/icones-versao-preta/whatsapp.svg" class="item-icon" alt="Whatsapp">
             <p>(Whatsapp da empresa)</p>
           </li>
           <li class="color-item">
-            <img src="./imagens/icones-versao-preta/truck.svg" class="item-icon" alt="Caminhão">
+            <img src="./img/icones-versao-preta/truck.svg" class="item-icon" alt="Caminhão">
             <p>Rastrear pedido</p>
           </li>
         </ul>
-      </div>
+      
     </nav>
   </div>
   <!--Fim do heading-->
@@ -108,25 +108,22 @@
   <div class="body">
     <!--Cards + carousel bootstrap-->
 
-    <h1>Categoria 1</h1>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="0">
-      <ol class="carousel-indicators">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 1</h1>
+        <hr>
         <div class="setas">
-          <img src="imagens/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
-            href="#carouselExampleIndicators" role="button" data-slide="prev">
-          </img>
-          <img src="imagens/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
-            href="#carouselExampleIndicators" role="button" data-slide="next">
-          </img>
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev" href="#carouselExampleControls"
+            role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next" href="#carouselExampleControls"
+          role="button" data-slide="next">
         </div>
-      </ol>
-      
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
             <div class="card">
-              <img class="card-img-top" src="./imagens/imgs-produto/img-produto1.png" alt="Card image cap">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
                 <p class="card-text"><s>R$ 157,00</s>
@@ -134,13 +131,13 @@
                 <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
                 </p>
                 <div class="ver-mais">
-                  <img class="icon-lupa" src="./imagens/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
                   <a href="./pagina-produto.html">Ver mais</a>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src="./imagens/imgs-produto/img-produto1.png" alt="Card image cap">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
                 <p class="card-text"><s>R$ 157,00</s>
@@ -148,7 +145,7 @@
                 <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
                 </p>
                 <div class="ver-mais">
-                  <img class="icon-lupa" src="./imagens/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
                   <a href="./pagina-produto.html">Ver mais</a>
                 </div>
               </div>
@@ -158,31 +155,174 @@
         <div class="carousel-item">
           <div class="row">
             <div class="card">
-              <img class="card-img-top" src="./imagens/imgs-produto/img-produto1.png" alt="Card image cap">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
-                <p class="card-text">
-                  <s>R$ 157,00</s>
+                <p class="card-text"><s>R$ 157,00</s>
                 <h2>R$ 119,90</h2>
                 <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
                 </p>
                 <div class="ver-mais">
-                  <img class="icon-lupa" src="./imagens/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
                   <a href="./pagina-produto.html">Ver mais</a>
                 </div>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src="./imagens/imgs-produto/img-produto1.png" alt="Card image cap">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
-                <p class="card-text">
-                  <s>R$ 157,00</s>
+                <p class="card-text"><s>R$ 157,00</s>
                 <h2>R$ 119,90</h2>
                 <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
                 </p>
                 <div class="ver-mais">
-                  <img class="icon-lupa" src="./imagens/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  
+  
+  
+    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 2</h1>
+        <hr>
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev" href="#carouselExampleControls2"
+            role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next" href="#carouselExampleControls2"
+            role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
                   <a href="./pagina-produto.html">Ver mais</a>
                 </div>
               </div>
@@ -191,8 +331,119 @@
         </div>
       </div>
     </div>
-  </div>
-
+  
+  
+    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 3</h1>
+        <hr>
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev" href="#carouselExampleControls3"
+            role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next" href="#carouselExampleControls3"
+            role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-preta/lupa.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
   <!--Links do bootstrap-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
