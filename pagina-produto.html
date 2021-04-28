@@ -12,9 +12,20 @@
   <!--Link para bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/scrolltotop_arrow_style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" 
+    crossorigin="anonymous">
+</script>
+<script src="js/scrolltotop_arrow_code.js"></script>
+
 </head>
 
 <body>
+  
+
   </div>
   <br />
   <div class="product-container">
@@ -29,15 +40,16 @@
 
     <div class="share">
       <div class="card-header" id="headingTwo">
-          <img src="./img/icones-versao-preta/share.svg" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-            aria-controls="collapseTwo">
+        <img src="./img/icones-versao-preta/share.svg" class="btn btn-link collapsed" data-toggle="collapse"
+          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
         <div class="collapse-share">
           <div class="share-card-body">
-            <img src="./img/redes-sociais/facebook.svg" class="media-icon" alt="Facebook"> 
-            <img src="./img/redes-sociais/instagram.svg" class="media-icon" alt="Instagram"> 
-            <img src="./img/redes-sociais/twitter.svg" class="media-icon" alt="Twitter"> 
+            <img src="./img/redes-sociais/facebook.svg" class="media-icon" alt="Facebook">
+            <img src="./img/redes-sociais/instagram.svg" class="media-icon" alt="Instagram">
+            <img src="./img/redes-sociais/twitter.svg" class="media-icon" alt="Twitter">
+            <img src="./img/redes-sociais/youtube.svg" class="media-icon" alt="Youtube">
           </div>
         </div>
       </div>
@@ -63,8 +75,14 @@
     <div class="small-img-container">
       <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
     </div>
+    <div class="small-yt-vid-container">
+      <img src="./img/imgs-produto/img-produto1.png" class="small-yt-vid" alt="Produto" value="mudar para video do YT" onclick="mudarVideoYT()" />
+    </div>
     <div class="small-img-container">
-      <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+      <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" onclick="mudarImagem()" alt="Produto" />
+    </div>
+    <div class="small-vid-container">
+      <img src="./img/imgs-produto/img-produto1.png" class="small-product-vid" alt="Produto" />
     </div>
   </div>
   <!--
@@ -83,6 +101,25 @@
         </div>
     </div>
 -->
+
+<!--JAVASCRIPT - REMOVER DEPOIS-->
+<script>
+  jQuery(document).ready(function($) {
+  $('.small-product-imgTwo').on({
+    'click': function() {
+      $('#change-image').attr('src', 'https://cdn.shopify.com/s/files/1/0781/4423/files/02_8df18841-8d84-4a96-9611-e5a965dce73c.jpg?v=1568864598');
+    }
+  });
+
+  $('.small-yt-vid').on({
+    'click': function() {
+      $('#change-image').attr('src', 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mothers-day-flower-bouquet-1588610191.jpg');
+    }
+  });
+});
+</script>
+
+
 
   <div class="container-pagamento">
     <s>De R$ 167,00</s>
@@ -117,74 +154,103 @@
     <p>Descrição do produto</p>
   </div>
 
-  <div id="accordion">
-    <div class="info-card">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-            aria-controls="collapseOne">
-            informações sobre o produto
-          </button>
-        </h5>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#navbarNav">Informações do produto</a>
+    <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="collapse info-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <img src="img/icones-versao-preta/seta-esquerda.svg" class="info-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <h4>Detalhes do produto</h4>
+        <p>Texto de informações do produto</p>
       </div>
+    </div>
+  </nav>
+  <p class="info-text">Texto de informações do produto...</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#navbarNav2">Ficha técnica</a>
+    <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="collapse info-collapse" id="navbarNav2">
+      <div class="navbar-nav">
+        <div class="info-content">
+          <img src="img/icones-versao-preta/seta-esquerda.svg" class="info-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="table">
+            <h4>Ficha técnica</h4>
+            <table>
+              <tr>
+                <th>Informações técnicas</th>
+              </tr>
+              <tr>
+                <td>Cor</td>
+                <td>Preto</td>
+              </tr>
+              <tr>
+                <td>Dimensões - Altura</td>
+                <td>210 cm</td>
+              </tr>
+              <tr>
+                <td>Dimensões - Largura</td>
+                <td>260 cm</td>
+              </tr>
+              <tr>
+                <td>Dimensões - profundidade</td>
+                <td>52 cm no balcão e 31 cm no aéreo</td>
+              </tr>
+              <tr>
+                <td>Garantia</td>
+                <td>3 meses</td>
+              </tr>
+              <tr>
+                <td>Marca</td>
+                <td>Madesa</td>
+              </tr>
+              <tr>
+                <td>Material</td>
+                <td>MDP</td>
+              </tr>
+              <tr>
+                <td>Peso aproximado</td>
+                <td>100 kg</td>
+              </tr>
+              <tr>
+                <td>Produto</td>
+                <td>Cozinha</td>
+              </tr>
+              <tr>
+                <th>Informações completares</th>
+              </tr>
+              <br><br>
+              <tr>
+                <td>Componentes</td>
+                <td>Armário, Balcão</td>
+              </tr>
+              <tr>
+                <td>Cor</td>
+                <td>Preto, Rústico</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#navbarNav3">Avaliações de clientes</a>
+    <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNav3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="collapse info-collapse" id="navbarNav3">
+      <div class="navbar-nav">
+        <div class="info-content">
+          <img src="img/icones-versao-preta/seta-esquerda.svg" class="info-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+      </div>
+    </div>
+  </nav>
 
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-        </div>
-      </div>
-    </div>
-    <div class="info-card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-            aria-controls="collapseTwo">
-            Ficha técnica
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-          single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-          occaecat craft beer farm-to-table, raw denim aesthetic synth
-          nesciunt you probably haven't heard of them accusamus labore
-          sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="info-card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-            aria-expanded="false" aria-controls="collapseThree">
-            Avaliações
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-          skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-          Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-          single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-          sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-          occaecat craft beer farm-to-table, raw denim aesthetic synth
-          nesciunt you probably haven't heard of them accusamus labore
-          sustainable VHS.
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="avaliacoes-info row">
     <div class="avaliacoes">
       <div class="main-avaliacao row">
@@ -196,24 +262,29 @@
 
 
     <div class="stars-number">
-      <p>5 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img src="./img/barras-avaliacao/barra3.png" class="barra-avaliacao" alt=""> </p>
-      <p>4 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img src="./img/barras-avaliacao/barra2.png" class="barra-avaliacao" alt=""> </p>
-      <p>3 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
-      <p>2 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
-      <p>1 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+      <p>5 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+          src="./img/barras-avaliacao/barra3.png" class="barra-avaliacao" alt=""> </p>
+      <p>4 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+          src="./img/barras-avaliacao/barra2.png" class="barra-avaliacao" alt=""> </p>
+      <p>3 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+          src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+      <p>2 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+          src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+      <p>1 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+          src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
     </div>
   </div>
 
-  
+
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
     <div class="slide-heading">
       <h1>Categoria 1</h1>
       <hr>
       <div class="setas">
-        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev" href="#carouselExampleControls"
-          role="button" data-slide="prev">
-        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next" href="#carouselExampleControls"
-        role="button" data-slide="next">
+        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+          href="#carouselExampleControls" role="button" data-slide="prev">
+        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+          href="#carouselExampleControls" role="button" data-slide="next">
       </div>
     </div>
     <div class="carousel-inner">
@@ -313,7 +384,7 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 
 
@@ -323,10 +394,10 @@
       <h1>Categoria 2</h1>
       <hr>
       <div class="setas">
-        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev" href="#carouselExampleControls2"
-          role="button" data-slide="prev">
-        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next" href="#carouselExampleControls2"
-          role="button" data-slide="next">
+        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+          href="#carouselExampleControls2" role="button" data-slide="prev">
+        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+          href="#carouselExampleControls2" role="button" data-slide="next">
       </div>
     </div>
     <div class="carousel-inner">
@@ -435,10 +506,10 @@
       <h1>Categoria 3</h1>
       <hr>
       <div class="setas">
-        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev" href="#carouselExampleControls3"
-          role="button" data-slide="prev">
-        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next" href="#carouselExampleControls3"
-          role="button" data-slide="next">
+        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+          href="#carouselExampleControls3" role="button" data-slide="prev">
+        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+          href="#carouselExampleControls3" role="button" data-slide="next">
       </div>
     </div>
     <div class="carousel-inner">
@@ -538,6 +609,88 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="security">
+      <h4>Você não é acostumado</h4>
+      <h2>A COMPRAR PELA INTERNET?</h2>
+
+      <div class="security-item">
+        <img class="security-icon" src="./img/icones-versao-preta/safe-box.svg" alt="">
+        <p><strong>Dados sigilosos </strong>e não compartilhados.</p>
+      </div>
+      <div class="security-item">
+        <img class="security-icon" src="./img/icones-versao-preta/lock.svg" alt="">
+        <p><strong>Dados financeiros </strong>secretos e protegidos.</p>
+      </div>
+      <div class="security-item">
+        <img class="security-icon" src="./img/icones-versao-preta/shield.svg" alt="">
+        <p><strong>Site 100% confiável </strong>e autenticados por empresas de segurança.</p>
+      </div>
+      <div class="security-item">
+        <img class="security-icon" src="./img/icones-versao-preta/cargo-truck.svg" alt="">
+        <p><strong>Entrega garantida no prazo </strong>combinado.</p>
+      </div>
+    </div>
+
+    <div class="formas-pagamento">
+      <p>Formas de 
+        <br>
+        <strong>Pagamento</strong>
+      </p>
+        <div class="pagamento-info"> 
+          <img class="icone-pagamento" src="./img/icones-pagamento/mastercard.svg" /> <p>(12x)</p>
+        </div>
+        <div class="pagamento-info"> 
+          <img class="icone-pagamento" src="./img/icones-pagamento/visa.svg" /> <p>(12x)</p>
+        </div>
+        <div class="pagamento-info"> 
+          <img class="icone-pagamento" src="./img/icones-pagamento/boleto.svg" />
+        </div>
+    </div>
+
+    <div class="site-blindado">
+      <img class="security-shield" src="./img/icones-versao-preta/secure.svg" /> 
+      <p>
+        <strong>
+          Site blindado
+          <br> 
+          Compra segura
+        </strong>
+      </p>
+    </div>
+    <br>
+    <div class="footer-btns">
+      <button class="blue-btn"><strong>ACOMPANHAR PEDIDO</strong></button> 
+    </div>
+    <div class="footer-btns">
+      <button class="green-btn">
+        <img class="wpp-btn" src="./img/icones-versao-preta/whatsapp.svg" />
+        <strong> 
+          ATENDIMENTO VIA WHATSAPP 
+          <br> 
+          CLIQUE AQUI
+        </strong>
+      </button>
+    </div>
+    
+    <div class="redes-sociais">
+      <h2>CONHEÇA NOSSAS REDES SOCIAIS</h2>
+      <div class="social-links">
+        <a><strong>blog</strong></a>
+        <img class="social-icon" src="./img/icones-versao-preta/instagram.svg" />
+        <img class="social-icon" src="./img/icones-versao-preta/facebook.svg" />
+        <img class="social-icon" src="./img/icones-versao-preta/youtube.svg" />
+      </div>
+    </div>
+
+    <div class="info-loja">
+      <a href="#">Política de Privacidade</a> <br><br>
+      <a href="#">Termos Gerais</a> <br><br>
+      <a href="#">Política de Devolução e Reembolso</a> <br><br>
+      <a href="#">Fale conosco</a> <br><br>
     </div>
   </div>
 

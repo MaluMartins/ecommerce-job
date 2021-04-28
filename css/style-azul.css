@@ -18,7 +18,7 @@ body {
 
 /*Design da navbar*/
 .navbar {
-    background-color: #2b9eff;
+    background-color: #2273b6;
     color: white;
     border-radius: 0px!important;
 }
@@ -41,6 +41,11 @@ body {
     max-height: 2.5em;
     max-width: 3em;
     float: left;
+}
+
+#navbarNav, #navbarNav2, #navbarNav3, #navbarSupportedContent {
+    position: absolute;
+    z-index: 1;
 }
 
 .carrinho {
@@ -69,13 +74,13 @@ body {
     border-radius: 4px;
 }
 
-a {
+.item-departamento a {
     color: black!important;
     font-size: 1.3rem;
 }
 
 .color-item {
-    background-color: #2b9eff;
+    background-color: #2273b6;
     margin: 1em 1em 1em 0;
     padding: 0.4em;
     border-radius: 4px;
@@ -149,10 +154,11 @@ a {
     height: 60%;
 }
 
+
 .ver-mais {
     display: flex;
     align-items: center;
-    background-color: #2b9eff;
+    background-color: #2273b6;
     padding: 0.5em;
     border-radius: 5px;
 }
@@ -229,6 +235,7 @@ a {
     max-width: 4rem;
     border-radius: 20px;
     box-shadow: 0 0 .3em rgb(175, 175, 175);
+    background-color: white;
 }
 
 .share #collaspseTwo {
@@ -272,9 +279,9 @@ a {
     justify-content: center;
 }
 
-.small-img-container {
-    width: 8rem;
-    height: 8rem;
+.small-img-container, .small-yt-vid-container, .small-vid-container {
+    width: 20%;
+    height: 7rem;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 .3em rgb(110, 110, 110);
@@ -284,14 +291,18 @@ a {
     justify-content: center;
 }
 
-.small-product-img {
-    max-width: 7rem;
-    max-height: 7rem;
+.small-product-img, .small-yt-vid, .small-product-imgTwo, .small-product-vid {
+    max-width: 90%;
+    max-height: 6rem;
 }
 
 /*Preço e botão comprar*/
 .container-pagamento {
     margin: 1.5rem 0 0 1rem;
+}
+
+.container-pagamento p, .container-pagamento a, .info-text p{
+    font-size: 1.5rem;
 }
 
 .container-preco {
@@ -308,8 +319,8 @@ a {
 }
 
 .credit-card {
-    max-height: 3rem;
-    max-width: 3rem;
+    max-height: 4rem;
+    max-width: 4rem;
     margin-right: 1rem;
 }
 
@@ -333,14 +344,14 @@ a {
 }
 
 .btn-compra {
-    background-color: #2b9eff;
+    background-color: #2273b6;
     color: white;
     border: none;
 }
 
 .btn-carrinho {
     background-color: white;
-    border: solid #2b9eff;
+    border: solid #2273b6;
 }
 
 /*Parte de informações do produto e avaliações*/
@@ -372,3 +383,184 @@ a {
     max-width: 5em;
 }
 
+/*Menus de informação do produto*/
+@media (max-width: 992px) {
+    
+    .info-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -75%;
+        transition: all 0.1s ease;
+    }
+
+    .info-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        margin-top: 0px;
+        bottom: 0;
+        right: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+        flex-direction: column;
+        height: 100%;
+        width: 75%;
+        transition: right 0.1s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: rgb(233, 233, 233);
+    }
+}
+
+table {
+    color: black!important;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+      background-color: #dddddd;
+      width: 100%;
+      padding: 5px;
+  }
+  
+  td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+  }
+
+.info-toggler {
+    max-height: 2rem;
+    max-width: 2rem;
+    border: none!important;
+}
+
+.info-content {
+    margin-top: 4rem;
+    color: black!important;
+}
+
+/*Botão de voltar ao topo*/
+.security-icon, .icone-pagamento, .social-icon, .security-shield {
+    max-height: 4rem;
+    max-width: 4rem;
+    margin-right: 1rem;
+}
+
+/*Footer*/
+.footer {
+    margin-top: 2rem;
+}
+
+.security-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.security-item p {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.formas-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem 0 1rem;
+}
+
+.formas-pagamento p {
+    margin-bottom: 0%;
+    margin-top: 4%;
+    font-size: 1.2rem;
+}
+
+.pagamento-info {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.icone-pagamento {
+    margin: 0px!important;
+    max-height: 3.5rem;
+    max-width: 3.5rem;
+}
+
+.security h4, .security h2 {
+    text-align: center;
+    color: #2273b6;
+}
+
+.site-blindado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
+}
+
+.site-blindado p {
+    font-size: 2rem;
+}
+
+.footer-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.footer-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 6px;
+    border: none;
+    padding: .8rem;
+}
+
+.blue-btn {
+    background-color: #2273b6;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.green-btn {
+    background-color: rgb(74, 211, 74);
+}
+
+.wpp-btn {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.info-loja {
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    background-color: #2273b6;
+}
+
+.info-loja a {
+    color: white!important;
+    font-size: 1.3rem; 
+}
