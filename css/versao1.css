@@ -463,8 +463,135 @@ table {
 }
 
 /*Footer*/
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
 .footer {
-    font-size: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(233, 232, 232);
+}
+
+.footerTwo {
+    background-color: #2273b6;
+    color: white!important;
+}
+
+.security {
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 1rem;
+}
+
+.security-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.security-item p {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.formas-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 1rem 0 1rem;
+}
+
+.titulo-pagamento {
     text-align: center;
-    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.pagamento-info {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.icone-pagamento {
+    margin: 0px!important;
+    max-height: 3.5rem;
+    max-width: 3.5rem;
+}
+
+.security h4, .security h2 {
+    text-align: center;
+    color: #2273b6;
+}
+
+.site-blindado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 0 0;
+}
+
+.site-blindado p {
+    font-size: 2rem;
+}
+
+.footer-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.footer-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 6px;
+    border: none;
+    padding: .8rem;
+}
+
+.blue-btn {
+    background-color: rgb(231, 231, 231);
+    color: #2273b6;
+    font-size: 1.5rem;
+}
+
+.green-btn {
+    background-color: rgb(74, 211, 74);
+}
+
+.wpp-btn {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    color: black!important;
+}
+
+.info-loja {
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    background-color: #2273b6;
+}
+
+.info-loja a {
+    color: white!important;
+    font-size: 1.3rem; 
 }
