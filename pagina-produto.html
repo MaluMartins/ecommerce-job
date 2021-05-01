@@ -268,9 +268,9 @@
 
   <!--INFORMAÇÕES NO DESKTOP-->
   <div class="info-desktop d-none d-lg-block">
-    <h3>Informações do produto</h3>
+    <h3 class="info-title">Informações do produto</h3>
     <p>Texto de informações do produto...</p>
-    <h3>Ficha técnica</h3>
+    <h3 class="info-title">Ficha técnica</h3>
     <p class="th-title">Informações técnicas</p>
     <table>
       <tr>
@@ -322,7 +322,7 @@
       </tr>
     </table>
 
-    <h3>Avaliações dos clientes</h3>
+    <h3 class="info-title">Avaliações dos clientes</h3>
     <div class="avaliacoes-info row">
       <div class="avaliacoes">
         <div class="main-avaliacao row">
@@ -346,41 +346,81 @@
             src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
       </div>
     </div>  
-    <div class="comment-container row">
-      <div class="comment">
-        <div class="estrelas">
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+    <div class="comments">
+      <div class="comment-container row">
+        <div class="comment">
+          <div class="estrelas">
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+          </div>
+          Nome - há 3 dias atrás
+          <h3>Avaliação</h3>
+          <p>Comentário sobre o produto</p>
+          <p class="good">Sim, eu recomendo este produto</p>
         </div>
-        Nome - há 3 dias atrás
-        <h3>Avaliação</h3>
-        <p>Comentário sobre o produto</p>
-        <p>Sim, eu recomendo este produto</p>
-      </div>
-      <div class="statistics">
-        Design <img class="barra-grande" href="./img/barras-avaliacao/barra-grande1.svg">
-        <br>
-        Custo benefício <img class="barra-grande" href="./img/barras-avaliacao/barra-grande2.svg">
-        <br>
-        Qualidade geral <img class="barra-grande" href="./img/barras-avaliacao/barra-grande3.svg">
-      </div>
-    </div>
-    <div class="comment-container">
-      <div class="comment">
-        <div class="estrelas">
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-          <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+        <div class="statistics-container">
+          <div class="statistics-content">
+            Design 
+            <div class="barra">
+              <span class="barra-interior" style="width: 75%"></span>
+            </div>
+          </div>
+            <br><br>
+          <div class="statistics-content">
+            Custo benefício
+            <div class="barra">
+              <span class="barra-interior" style="width: 80%"></span>
+            </div>
+          </div>
+            <br><br>
+          <div class="statistics-content">
+            Qualidade geral
+            <div class="barra">
+              <span class="barra-interior" style="width: 100%"></span>
+            </div>
+          </div>
         </div>
-        Nome - há 3 dias atrás
-        <h3>Avaliação</h3>
-        <p>Comentário sobre o produto</p>
-        <p>Não, eu não recomendo este produto</p>
+      </div>
+      <hr>
+      <div class="comment-container row">
+        <div class="comment">
+          <div class="estrelas">
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+          </div>
+          Nome - há 3 dias atrás
+          <h3>Avaliação</h3>
+          <p>Comentário sobre o produto</p>
+          <p class="bad">Não, eu não recomendo este produto</p>
+        </div>
+        <div class="statistics-container">
+          <div class="statistics-content">
+            Design 
+            <div class="barra">
+              <span class="barra-interior" style="width: 60%"></span>
+            </div>
+          </div>
+            <br><br>
+          <div class="statistics-content">
+            Custo benefício
+            <div class="barra">
+              <span class="barra-interior" style="width: 50%"></span>
+            </div>
+          </div>
+            <br><br>
+          <div class="statistics-content">
+            Qualidade geral
+            <div class="barra">
+              <span class="barra-interior" style="width: 40%"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1155,7 +1195,56 @@
         </div>
     </div>
 </div>
+</div>
 
+  <div class="duvidas">
+    <h1>DÚVIDAS FREQUENTES</h1>
+    
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5>
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="footer">

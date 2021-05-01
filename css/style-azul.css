@@ -8,7 +8,7 @@ html {
     background-color: white;
 }
 
-.heading, .info-text, .texto-avaliacoes {
+.heading, .info-text, .texto-avaliacoes, .info-desktop, .description {
     margin-left: 1rem!important;
 }
 
@@ -19,7 +19,8 @@ html {
 /*Design da navbar*/
 
 .navbar {
-    background-color: #2273b6;
+    display: block!important;
+    background-color: #2273b6!important;
     color: white;
     border-radius: 0px!important;
 }
@@ -27,14 +28,22 @@ html {
 .main-nav {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
 
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav h1 {
     font-family: 'Fredoka One';
-    text-align: center;
+    font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-toggler {
@@ -42,6 +51,17 @@ html {
     max-height: 2.5em;
     max-width: 3em;
     float: left;
+}
+
+.nav-item, .color-item {
+    margin: 0 1rem 0 1rem;
+}
+
+.item-departamento, .color-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white!important;
 }
 
 #navbarNav, #navbarNav2, #navbarNav3, #navbarSupportedContent {
@@ -61,33 +81,6 @@ html {
     margin-right: 0.6em;
 }
 
-.nav-item h2 {
-    color: black;
-    display: inline;
-}
-
-.item-departamento {
-    display: flex;
-    align-items: center;
-    padding: 0.4em;
-    background-color: white;
-    margin: 0.4em 0.4em 0.4em 0;
-    border-radius: 4px;
-}
-
-.item-departamento a {
-    color: black!important;
-    font-size: 1.3rem;
-}
-
-.color-item {
-    background-color: #2273b6;
-    margin: 1em 1em 1em 0;
-    padding: 0.4em;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
 
 .color-item p {
     vertical-align: center;
@@ -95,10 +88,13 @@ html {
 }
 
 .form-inline {
-    width: 100%;
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
 }
 
 .form-control {
+    width: 100%!important;
     background-image: url('http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png');
     background-size:contain;
     background-repeat: no-repeat;
@@ -138,11 +134,29 @@ html {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         background-color: rgb(233, 233, 233);
     }
+
+    .item-departamento {
+        display: flex;
+        align-items: center;
+        padding: 0.4em;
+        background-color: white;
+        margin: 0.4em 0.4em 0.4em 0;
+        border-radius: 4px;
+    }
+
+    .color-item {
+        background-color: #2273b6;
+        margin: 1em 1em 1em 0;
+        padding: 0.4em;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }  
 }
 
 /*Design do carrossel e cards de produtos*/
 @media screen and (max-width: 500px) {
-    .card {
+    .carousel .card {
         width: 40%!important;
         height: 60%;
     }
@@ -170,11 +184,11 @@ html {
     height: 2.5rem;
 }
 
-.card-deck {
+.carousel .card-deck {
     margin: 0 2rem 0 2rem!important;
 }
 
-.card {
+.carousel .card {
     width: 18%;
     height: 60%;
 }
@@ -410,6 +424,49 @@ html {
 }
 
 /*Parte de informações do produto e avaliações*/
+.info-title {
+    background-color: rgb(233, 233, 233);
+}
+
+.barra {
+    height: 1.5rem;
+    width: 30rem;
+    border-radius: 8px;
+    background-color: rgb(233, 233, 233);
+    overflow: hidden;
+    margin-left: 2.5rem;
+}
+
+.barra-interior {
+    display: block;
+    background-color: #2273b6;
+    height: 100%;
+    background-size: 300% 100%;
+}
+
+.statistics-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments {
+    margin-left: 5rem;
+}
+
+.comment-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.good {
+    color: rgb(27, 170, 27);
+}
+
+.bad {
+    color: rgb(255, 50, 50);
+}
 
 .avaliacoes {
     margin-right: 2rem;
@@ -506,6 +563,11 @@ table td {
     max-height: 4rem;
     max-width: 4rem;
     margin-right: 1rem;
+} 
+
+/*Parte de dúvidas frequentes*/
+.accordion card {
+    max-width: 40rem!important;
 }
 
 /*Footer*/
