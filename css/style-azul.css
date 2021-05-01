@@ -27,9 +27,20 @@ html {
 
 .main-nav {
     width: 100%;
+    display: block;
+}
+
+.carrinho-container {
+    position: absolute;
+    width: 100%;
+    left: 87%;
+    float: right!important;
+}
+
+.main {
+    width: 100%!important;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .navbar-collapse {
@@ -37,13 +48,18 @@ html {
     justify-content: center;
 }
 
-.main-nav h1 {
+.page-title {
+    width: 100%!important;
+}
+
+.main h1 {
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
     font-family: 'Fredoka One';
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 .navbar-toggler {
@@ -53,26 +69,44 @@ html {
     float: left;
 }
 
+.carrinho {
+    max-height: 2.5em;
+    max-width: 2.5em;
+}
+
+.navbar-toggler, .carrinho {
+    margin-top: 0;
+}
+
 .nav-item, .color-item {
     margin: 0 1rem 0 1rem;
 }
 
-.item-departamento, .color-item {
+.item-departamento, .color-item, .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    width: 11rem;
+    margin-top: 1rem;
+}
+
+.color-item {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: white!important;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.dropdown-container {
+    display: flex!important;
+    justify-content: center;
 }
 
 #navbarNav, #navbarNav2, #navbarNav3, #navbarSupportedContent {
     position: absolute;
     z-index: 1;
-}
-
-.carrinho {
-    max-height: 2.5em;
-    max-width: 2.5em;
-    float: right;
 }
 
 .item-icon {
@@ -82,9 +116,9 @@ html {
 }
 
 
-.color-item p {
-    vertical-align: center;
+.color-item a {
     font-size: 1.2em; 
+    color: white!important;
 }
 
 .form-inline {
@@ -94,7 +128,7 @@ html {
 }
 
 .form-control {
-    width: 100%!important;
+    width: 85%!important;
     background-image: url('http://www.clker.com/cliparts/z/1/T/u/9/2/search-icon-hi.png');
     background-size:contain;
     background-repeat: no-repeat;
@@ -138,20 +172,35 @@ html {
     .item-departamento {
         display: flex;
         align-items: center;
+        width: 100%;
         padding: 0.4em;
         background-color: white;
         margin: 0.4em 0.4em 0.4em 0;
         border-radius: 4px;
     }
 
+    .item-departamento a, #navbarDropdownMenuLink {
+        color: black!important;
+    }
+
     .color-item {
         background-color: #2273b6;
         margin: 1em 1em 1em 0;
+        width: 100%;
         padding: 0.4em;
         border-radius: 4px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }  
+
+    .dropdown-toggle {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 100%!important;
+    }
 }
 
 /*Design do carrossel e cards de produtos*/
@@ -344,6 +393,7 @@ html {
 }
 
 .small-img-container, .small-yt-vid-container, .small-vid-container {
+    cursor: pointer;
     width: 10rem;
     height: 10rem;
     background-color: white;
@@ -566,8 +616,32 @@ table td {
 } 
 
 /*Parte de dúvidas frequentes*/
-.accordion card {
-    max-width: 40rem!important;
+.duvidas {
+    margin: 3rem 0 3rem 0;
+}
+
+.duvidas h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+#accordion {
+    display: flex!important;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accordion1, .accordion2 {
+    width: 40%!important;
+}
+
+#accordion .card {
+    margin: 2rem;
+}
+
+#accordion .card-header {
+    background-color: white!important;
 }
 
 /*Footer*/
