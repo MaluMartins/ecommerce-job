@@ -106,7 +106,7 @@ html {
 
 #navbarNav, #navbarNav2, #navbarNav3, #navbarSupportedContent {
     position: absolute;
-    z-index: 1;
+    z-index: 999;
 }
 
 .item-icon {
@@ -321,7 +321,7 @@ html {
   
 .share #collapseTwo {
     position: absolute;
-    z-index: 1;
+    z-index: 999;
 }
 
 .title-share {
