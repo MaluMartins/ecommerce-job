@@ -89,20 +89,46 @@
       </div>
 
       <div class="small-product-container d-lg-none">
-        <div class="small-img-container">
-          <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="small-img-container">
+                <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" onclick="mudarImg01()"/>
+              </div>
+              <div class="small-yt-vid-container">
+                <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarVideoYT()"
+                  value="mudar para video do YT" />
+              </div>
+            
+              <div class="small-img-container">
+                <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" onclick="mudarImg02()"
+                  alt="Produto" />
+              </div>
+            
+              <div class="small-vid-container">
+                <img src="./img/imgs-produto/video.png" class="small-product-vid" onClick="mudarVideo()" />
+              </div>
+            </div>
+          </div>
+          
+            
         </div>
-        <div class="small-yt-vid-container">
-          <img src="./img/imgs-produto/img-produto1.png" class="small-yt-vid" alt="Produto"
-            value="mudar para video do YT" onclick="mudarVideoYT()" />
-        </div>
-        <div class="small-img-container">
-          <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" onclick="mudarImagem()"
-            alt="Produto" />
-        </div>
-        <div class="small-vid-container">
-          <img src="./img/imgs-produto/img-produto1.png" class="small-product-vid" alt="Produto" />
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      
+        
+        
+       
+        
       </div>
 
 

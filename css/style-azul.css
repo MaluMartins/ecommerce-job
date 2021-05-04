@@ -8,6 +8,10 @@ html {
     background-color: white;
 }
 
+.heading, .body, .footer {
+    width: 100%!important;
+}
+
 .heading, .info-text, .texto-avaliacoes, .info-desktop, .description {
     margin-left: 1rem!important;
 }
@@ -106,7 +110,7 @@ html {
 
 #navbarNav, #navbarNav2, #navbarNav3, #navbarSupportedContent {
     position: absolute;
-    z-index: 999;
+    z-index: 999!important;
 }
 
 .item-icon {
@@ -321,7 +325,7 @@ html {
   
 .share #collapseTwo {
     position: absolute;
-    z-index: 999;
+    z-index: 999!important;
 }
 
 .title-share {
@@ -349,11 +353,6 @@ html {
     border-radius: 20px;
     box-shadow: 0 0 .3em rgb(175, 175, 175);
     background-color: white;
-}
-
-.share #collaspseTwo {
-    position: absolute;
-    z-index: 1;
 }
 
 .media-icon {
