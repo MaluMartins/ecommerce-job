@@ -1,0 +1,46 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 214" width="214" height="214">
+	<title>down-arrow-svg</title>
+	<defs>
+		<image  width="214" height="107" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANYAAABrAQMAAAAxee7GAAAAAXNSR0IB2cksfwAAAAZQTFRF////AAAAVcLTfgAAAAJ0Uk5T/wDltzBKAAABoUlEQVR4nJ3PsW3GIBCGYRCRaCKxQCQWicRikfAGWYlRGMGlC2Ti37HxfcddinzQnJ7qNeZfezOLau+mqPZhqmqfZlXty2yqteMps83smrlmumb+sEWxcFhRLB5WFUuHaYH5MC2wt9cXZ1+mBLqXKYH+tEW0cFoRLZ5WRUunyYH5NDmwnyYG2l8TA92viYH+skWwcFkRLF5WBUuXSYH5MimwXyYE2tuEQHebEOiHLZOFYWWyOKxOlobNgXnYHNiHTYH2sSnQPTYFemI8MBDjgZEYD0zEeGAmxgM7MRZoqbFAR40FejAMDGAYGMEwMIFhYAbDwA4GgRYNAh0aBHpmNDAwo4GRGQ1MzGhgZkYDOzMSaLmRQMeNBPrJnsAw2RMYJ3sC02RPYJ7sCeyTjUA72wh0s41AL9gdGAS7A6Ngd2AS7A7Mgt2BXbDG8qjtLI9aZ3lgC+aBFcwDq5gHtmIe2IZ5YA3zwHbMA+uYh7ZAHlqBPLQKeWgr5KFtkIfWIA9thzy0DnnMFprHrNA8ZpXmMVtpHrMNLrRmddudbt3/Yd9gPyS4kA784Hg6AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="Layer">
+		<g id="Layer">
+			<path id="Layer" class="shp0" d="M0 53.33L106.67 160L213.33 53.33L0 53.33Z" />
+			<use id="Camada 1" href="#img1" x="0" y="53" />
+		</g>
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+</svg>
