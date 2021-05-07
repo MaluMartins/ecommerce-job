@@ -316,6 +316,7 @@ button {
 .icon-lupa {
     max-height: 1.5em;
     max-width: 1.5em;
+    margin-right: 1rem;
 }
  /*Página de produtos*/
 
@@ -324,6 +325,7 @@ button {
     align-items: center;
     justify-content: space-evenly;
     margin: 2rem;
+    padding-top: 2rem;
 }
 
 .container-main, .container-description {
@@ -440,7 +442,21 @@ button {
     box-shadow: 0 0 .5em rgb(126, 126, 126);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center!important;
+}
+
+#mudarImg01,
+#mudarVideoYT,
+#mudarImg02,
+#mudarVideo {
+  display: none;
+}
+
+#mudarImg01:target,
+#mudarVideoYT:target,
+#mudarImg02:target,
+#mudarVideo:target {
+  display: block;
 }
 
 .select-img {
@@ -450,7 +466,7 @@ button {
 }
 
 .product-img {
-    width: 95%;
+    width: 100%;
 }
 
 .small-product-container #carouselExampleControls {

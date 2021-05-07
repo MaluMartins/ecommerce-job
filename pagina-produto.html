@@ -32,28 +32,57 @@
   <div class="product-main">
 
 
-
+    <!--ESCOLHA DE IMAGENS NO DESKTOP-->
     <div class="d-none d-lg-block">
       <div class="small-img-container">
-        <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" onclick="mudarImg01()" />
+        <a href="#mudarImg01">
+          <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+        </a>
       </div>
       <div class="small-yt-vid-container">
-        <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarVideoYT()"
-          value="mudar para video do YT" />
+        <a href="#mudarVideoYT">
+          <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" />
+        </a>
       </div>
       <div class="small-img-container">
-        <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" onclick="mudarImg02()"
-          alt="Produto" />
+        <a href="#mudarImg02">
+          <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo"
+            alt="Produto" />
+        </a>
       </div>
       <div class="small-vid-container">
-        <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" onclick="mudarVideo()" alt="Produto" />
+        <a href="#mudarVideo">
+          <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" />
+        </a>
       </div>
     </div>
 
     <div class="container-main">
       <div class="product-container">
         <div class="img-container">
-          <img src="./img/imgs-produto/img-produto1.png" class="product-img" id="mudarImg" alt="Produto" />
+          <!--IMAGEM 1-->
+          <div class="main-img" id="mudarImg01">
+            <img src="./img/imgs-produto/img-produto1.png" class="product-img"/>
+          </div>
+
+          <!--VIDEO YOUTUBE-->
+          <div class="main-yt-video" id="mudarVideoYT">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!--IMAGEM 2-->
+          <div class="main-img2" id="mudarImg02">
+            <img src="./img/imgs-produto/img-produto2.png" class="product-img">
+          </div>
+
+          <!--VIDEO-->
+          <div class="main-video" id="mudarVideo">
+            <video width="100%" height="100%" controls>
+              <source src="./videos/magalu.mp4" type="video/mp4" class="product-img">
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -98,6 +127,7 @@
 
       </div>
 
+      <!--SELEÇÃO DE IMAGEM NO MOBILE-->
       <div class="small-product-container d-lg-none">
         <div id="carouselExampleControls0" class="carousel slide" data-ride="carousel" data-interval="0">
           <div class="slide-heading">
@@ -112,38 +142,52 @@
             <div class="carousel-item active">
               <div class="select-img">
                 <div class="small-img-container">
-                  <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto"
-                    onclick="mudarImg01()" />
+                  <a href="#mudarImg01">
+                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+                  </a>
                 </div>
                 <div class="small-yt-vid-container">
-                  <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarVideoYT()"
-                    value="mudar para video do YT" />
+                  <a href="#mudarVideoYT">
+                    <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto"
+                      value="mudar para video do YT" />
+                  </a>
                 </div>
                 <div class="small-img-container">
-                  <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" onclick="mudarImg02()"
-                    alt="Produto" />
+                  <a href="#mudarImg02">
+                    <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo"
+                      alt="Produto" />
+                  </a>
                 </div>
                 <div class="small-vid-container">
-                  <video src="./img/imgs-produto/video.png" class="small-product-vid" onClick="mudarVideo()"></video>
+                  <a href="#mudarVideo">
+                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" />
+                  </a>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="select-img">
                 <div class="small-img-container">
-                  <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto"
-                    onclick="mudarImg01()" />
+                  <a href="#mudarImg01">
+                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+                  </a>
                 </div>
                 <div class="small-yt-vid-container">
-                  <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarVideoYT()"
-                    value="mudar para video do YT" />
+                  <a href="#mudarVideoYT">
+                    <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto"
+                      value="mudar para video do YT" />
+                  </a>
                 </div>
                 <div class="small-img-container">
-                  <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" onclick="mudarImg02()"
-                    alt="Produto" />
+                  <a href="#mudarImg02">
+                    <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo"
+                      alt="Produto" />
+                  </a>
                 </div>
                 <div class="small-vid-container">
-                  <video src="./img/imgs-produto/video.png" class="small-product-vid" onClick="mudarVideo()"></video>
+                  <a href="#mudarVideo">
+                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -194,128 +238,128 @@
   <div class="info-mobile d-lg-none">
     <div class="info-content">
       <div id="mySidepanel1" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
-          <h3>Descrição</h3>
-          <p>Texto de informações do produto </p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+        <h3>Descrição</h3>
+        <p>Texto de informações do produto </p>
       </div>
-      
+
       <button class="openbtn" onclick="openNav1()">
-          <div class="info-text"> Informações do produto </div> 
-          <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler"/>
-      </button> 
-  </div>
+        <div class="info-text"> Informações do produto </div>
+        <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" />
+      </button>
+    </div>
 
-  <div class="info-content">
+    <div class="info-content">
       <div id="mySidepanel2" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
-          <h3>Informações técnicas</h3>
-          <div class="table">
-                  <table>
-                    <tr>
-                      <th>Informações técnicas</th>
-                    </tr>
-                    <tr>
-                      <td>Cor</td>
-                      <td>Preto</td>
-                    </tr>
-                    <tr>
-                      <td>Dimensões - Altura</td>
-                      <td>210 cm</td>
-                    </tr>
-                    <tr>
-                      <td>Dimensões - Largura</td>
-                      <td>260 cm</td>
-                    </tr>
-                    <tr>
-                      <td>Dimensões - profundidade</td>
-                      <td>52 cm no balcão e 31 cm no aéreo</td>
-                    </tr>
-                    <tr>
-                      <td>Garantia</td>
-                      <td>3 meses</td>
-                    </tr>
-                    <tr>
-                      <td>Marca</td>
-                      <td>Madesa</td>
-                    </tr>
-                    <tr>
-                      <td>Material</td>
-                      <td>MDP</td>
-                    </tr>
-                    <tr>
-                      <td>Peso aproximado</td>
-                      <td>100 kg</td>
-                    </tr>
-                    <tr>
-                      <td>Produto</td>
-                      <td>Cozinha</td>
-                    </tr>
-                    <tr>
-                      <th>Informações completares</th>
-                    </tr>
-                    <br><br>
-                    <tr>
-                      <td>Componentes</td>
-                      <td>Armário, Balcão</td>
-                    </tr>
-                    <tr>
-                      <td>Cor</td>
-                      <td>Preto, Rústico</td>
-                    </tr>
-                  </table>
-          </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
+        <h3>Informações técnicas</h3>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Informações técnicas</th>
+            </tr>
+            <tr>
+              <td>Cor</td>
+              <td>Preto</td>
+            </tr>
+            <tr>
+              <td>Dimensões - Altura</td>
+              <td>210 cm</td>
+            </tr>
+            <tr>
+              <td>Dimensões - Largura</td>
+              <td>260 cm</td>
+            </tr>
+            <tr>
+              <td>Dimensões - profundidade</td>
+              <td>52 cm no balcão e 31 cm no aéreo</td>
+            </tr>
+            <tr>
+              <td>Garantia</td>
+              <td>3 meses</td>
+            </tr>
+            <tr>
+              <td>Marca</td>
+              <td>Madesa</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>MDP</td>
+            </tr>
+            <tr>
+              <td>Peso aproximado</td>
+              <td>100 kg</td>
+            </tr>
+            <tr>
+              <td>Produto</td>
+              <td>Cozinha</td>
+            </tr>
+            <tr>
+              <th>Informações completares</th>
+            </tr>
+            <br><br>
+            <tr>
+              <td>Componentes</td>
+              <td>Armário, Balcão</td>
+            </tr>
+            <tr>
+              <td>Cor</td>
+              <td>Preto, Rústico</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      
-      <button class="openbtn" onclick="openNav2()">
-          <div class="info-text"> Ficha técnica </div>
-          <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler"/>
-      </button> 
-  </div>
 
-  <div class="info-content">
+      <button class="openbtn" onclick="openNav2()">
+        <div class="info-text"> Ficha técnica </div>
+        <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" />
+      </button>
+    </div>
+
+    <div class="info-content">
       <div id="mySidepanel3" class="sidepanel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
-          <h3>Avaliações de clientes</h3>
-          <div class="comments">
-              <div class="comment-container">
-                <div class="comment">
-                  <div class="estrelas">
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
-                  </div>
-                  Nome - há 3 dias atrás
-                  <h3>Avaliação</h3>
-                  <p>Comentário sobre o produto</p>
-                  <p class="good">Sim, eu recomendo este produto</p>
-                </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
+        <h3>Avaliações de clientes</h3>
+        <div class="comments">
+          <div class="comment-container">
+            <div class="comment">
+              <div class="estrelas">
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
               </div>
-              <hr>
-              <div class="comment-container">
-                <div class="comment">
-                  <div class="estrelas">
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
-                    <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
-                  </div>
-                  Nome - há 3 dias atrás
-                  <h3>Avaliação</h3>
-                  <p>Comentário sobre o produto</p>
-                  <p class="bad">Não, eu não recomendo este produto</p>
-                </div>
-              </div>
+              Nome - há 3 dias atrás
+              <h3>Avaliação</h3>
+              <p>Comentário sobre o produto</p>
+              <p class="good">Sim, eu recomendo este produto</p>
             </div>
+          </div>
+          <hr>
+          <div class="comment-container">
+            <div class="comment">
+              <div class="estrelas">
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+              </div>
+              Nome - há 3 dias atrás
+              <h3>Avaliação</h3>
+              <p>Comentário sobre o produto</p>
+              <p class="bad">Não, eu não recomendo este produto</p>
+            </div>
+          </div>
+        </div>
       </div>
-      
+
       <button class="openbtn" onclick="openNav3()">
-          <div class="info-text"> Avaliações de clientes </div>
-          <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler"/>
-      </button> 
-  </div>
+        <div class="info-text"> Avaliações de clientes </div>
+        <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" />
+      </button>
+    </div>
     <div class="avaliacoes-info">
       <div class="avaliacoes">
         <div class="main-avaliacao">
