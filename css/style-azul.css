@@ -30,6 +30,66 @@ button {
     padding: 0px!important;
 }
 
+/*Widget fixo de comprar produto*/
+.bottomMenu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10000000;
+    transition: all .5s;
+}
+
+.hide {
+    opacity:0;
+   
+}
+
+.show {
+    opacity:1;
+  
+}
+
+.img-produto-widget {
+    max-height: 5rem;
+    max-width: 5rem;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(228, 228, 228);
+}
+
+.navbar-content-main {
+    display: flex;
+    width: 50%;
+}
+
+.navbar-content .main-preco {
+    display: flex;
+}
+
+.navbar-content .main-preco s {
+    font-size: 1.5rem;
+}
+
+.preco-compra {
+    display: flex;
+    width: 50%;
+}
+
+.btn-compra2 {
+    background-color: #2273b6;
+    color: white;
+    border: none;
+    width: 20%;
+    height: 60%;
+    border-radius: 4px;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
 /*Design da navbar*/
 @media screen and (max-width: 425px) {
     .main-nav {

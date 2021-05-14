@@ -1,3 +1,5 @@
+//collapse para sidebar
+
 function openNav1() {
     document.getElementById("mySidepanel1").style.width = "250px";
     document.getElementById("mySidepanel1").style.height = "100%";
