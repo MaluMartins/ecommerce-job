@@ -20,9 +20,9 @@
     <!--Menu superior-->
 
 
-    <!--Navbar do bootstrap-->
+    <!--NAVBAR MOBILE-->
     <div class="page-navbar">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg d-lg-none">
         <div class="main-nav">
           <div class="main-heading">
             <div class="main">
@@ -135,6 +135,46 @@
         </div>
       </nav>
     </div>
+
+    <!--NAVBAR DESKTOP-->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="main-nav">
+        <a class="navbar-brand" href="#">Nome da loja</a>
+        <div class="search">
+          <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar na loja" aria-label="Search">
+            </form>
+          </nav>
+        </div>
+
+        <div class="nav-icons">
+          <a href="#">
+            <img src="./img/icones-versao-branca/carrinho-branco.png" class="carrinho-icon" alt="Carrinho">
+          </a>
+          <a href="#">
+            <img src="./img/icones-versao-branca/truck-branco.png" class="pedido-icon" alt="Acompanhar pedido">
+          </a>
+          <a href="#">
+            <img src="./img/icones-versao-branca/whatsapp-branco.svg"class="wpp-icon" alt="Whatsapp">
+          </a>
+        </div>
+      </div>
+      <div class="navbar" id="navbarNavDropdownTwo">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTwoMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Todos os departamentos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
   <!--Fim do heading-->
 
@@ -1333,7 +1373,6 @@
           <img class="icone-pagamento" src="./img/icones-pagamento/boleto.svg" />
         </div>
       </div>
-      <!--
           <div class="site-blindado">
             <img class="security-shield" src="./img/icones-versao-preta/secure.svg" />
             <p>
@@ -1344,7 +1383,6 @@
               </strong>
             </p>
           </div>
-        -->
     </div>
 
     <br>

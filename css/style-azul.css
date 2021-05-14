@@ -31,6 +31,12 @@ button {
 }
 
 /*Design da navbar*/
+@media screen and (max-width: 425px) {
+    .main-nav {
+        width: 100%;
+        display: block!important;
+    }
+}
 
 .navbar {
     display: block!important;
@@ -41,7 +47,24 @@ button {
 
 .main-nav {
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Fredoka One';
+    font-size: 2.5rem!important;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.carrinho-icon, .pedido-icon, .wpp-icon {
+    max-height: 2em;
+    max-width: 2em;
+    margin-left: 1rem;
 }
 
 .carrinho-container {
@@ -61,6 +84,11 @@ button {
     width: 100%!important;
     display: flex;
     align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-collapse {
@@ -98,7 +126,7 @@ button {
     margin: 0 1rem 0 1rem;
 }
 
-.item-departamento, .color-item, .dropdown-toggle {
+.color-item {
     display: flex;
     align-items: center;
     width: 11rem;
@@ -137,6 +165,15 @@ button {
     color: white!important;
 }
 
+.search {
+    width: 50%;
+    border-radius: 6px;
+}
+
+.search .navbar {
+    padding: 0px!important;
+}
+
 .form-inline {
     width: 100%!important;
     display: flex;
@@ -146,6 +183,7 @@ button {
 .form-inline input {
     height: 2.5rem!important;
     margin: 0!important;
+    width: 100%!important;
 }
 
 .form-control {
@@ -260,6 +298,9 @@ button {
     z-index: 1;
 }
 
+.slide-heading {
+    padding-bottom: 2rem;
+}
 
 .slide-heading h1 {
     margin: 2.2rem 0 0 2rem;;
@@ -310,8 +351,9 @@ button {
 .ver-mais {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #2273b6;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 5px;
 }
 
@@ -809,6 +851,10 @@ table td {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.duvidas .btn-text:hover, .duvidas .btn-plus:hover {
+    text-decoration: none!important;
 }
 
 #accordion .card {
