@@ -226,6 +226,11 @@ button {
 
 /* transformar navbar em sidebar para mobile */
 @media (max-width: 992px) {
+  .navbar-collapse {
+    z-index: 9999999999 !important;
+    opacity: 1!important;
+  }
+
   .navbar-collapse.collapsing .navbar-nav {
     display: block;
     position: fixed;
@@ -241,7 +246,8 @@ button {
     margin-top: 0px;
     bottom: 0;
     left: 0;
-    z-index: 999 !important;
+    z-index: 9999999999 !important;
+    opacity: 1!important;
     padding-left: 2em;
     padding-right: 2em;
     flex-direction: column;
@@ -922,9 +928,8 @@ table td {
   margin-top: 2rem;
 }
 
-.duvidas .btn-text:hover,
-.duvidas .btn-plus:hover {
-  text-decoration: none !important;
+.btn {
+  text-decoration: none!important;
 }
 
 #accordion .card {
@@ -1234,7 +1239,7 @@ table td {
 }
 
 .show {
-  opacity: 1;
+  opacity: .9;
 }
 
 .img-produto-widget {
