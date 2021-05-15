@@ -429,7 +429,21 @@ button {
   }
 }
 
+
 /*Design do heading do produto*/
+#carouselExampleControlsFirst {
+  display: block;
+  margin-right: 2rem;
+}
+
+#prev1 {
+  left: 2rem!important;
+}
+
+#next1 {
+  left: .5rem!important;
+}
+
 .small-product-container .carousel-control-prev,
 .small-product-container .carousel-control-next {
   margin-bottom: 1rem;
