@@ -9,8 +9,10 @@
   <title>Produto</title>
 
   <link rel="stylesheet" href="./css/style-azul.css" />
+
   <script src="./js/scroll-hide.js"></script>
   <script src="./js/collapse-sidepanel.js"></script>
+  <script src="./js/change-img.js"></script>
 
   <!--Link para bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,30 +25,33 @@
 
 <body>
 
+  <!--botão de voltar ao topo-->
+  <button onclick="topFunction()" id="myBtn" class="btn-top" title="Ir para o topo" style="bottom: 20%;">^</button>
+  <script src="./js/scroll-top.js"></script>
+
   <div class="product-main">
 
-
-    <!--ESCOLHA DE IMAGENS NO DESKTOP-->
+    <!--SELEÇÃO DE IMAGENS NO DESKTOP-->
     <div class="d-none d-lg-block">
       <div class="small-img-container">
         <a href="#mudarImg01">
-          <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+          <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" onclick="mudarImg01()"/>
         </a>
       </div>
       <div class="small-yt-vid-container">
         <a href="#mudarVideoYT">
-          <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" />
+          <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarImg()"/>
         </a>
       </div>
       <div class="small-img-container">
         <a href="#mudarImg02">
           <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo"
-            alt="Produto" />
+            alt="Produto" onclick="mudarImg()"/>
         </a>
       </div>
       <div class="small-vid-container">
         <a href="#mudarVideo">
-          <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" />
+          <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" onclick="mudarImg()"/>
         </a>
       </div>
     </div>
@@ -56,7 +61,7 @@
         <div class="img-container">
           <!--IMAGEM 1-->
           <div class="main-img" id="mudarImg01">
-            <img src="./img/imgs-produto/img-produto1.png" class="product-img"/>
+            <img src="./img/imgs-produto/img-produto1.png" class="product-img" id="mainImg"/>
           </div>
 
           <!--VIDEO YOUTUBE-->
@@ -137,24 +142,24 @@
               <div class="select-img">
                 <div class="small-img-container">
                   <a href="#mudarImg01">
-                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" onclick="mudarImg01()"/>
                   </a>
                 </div>
                 <div class="small-yt-vid-container">
                   <a href="#mudarVideoYT">
                     <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto"
-                      value="mudar para video do YT" />
+                      value="mudar para video do YT" onclick="mudarImg()"/>
                   </a>
                 </div>
                 <div class="small-img-container">
                   <a href="#mudarImg02">
                     <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo"
-                      alt="Produto" />
+                      alt="Produto" onclick="mudarImg()"/>
                   </a>
                 </div>
                 <div class="small-vid-container">
                   <a href="#mudarVideo">
-                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" />
+                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" onclick="mudarImg()"/>
                   </a>
                 </div>
               </div>
@@ -163,23 +168,23 @@
               <div class="select-img">
                 <div class="small-img-container">
                   <a href="#mudarImg01">
-                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" />
+                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto" onclick="mudarImg01()"/>
                   </a>
                 </div>
                 <div class="small-yt-vid-container">
                   <a href="#mudarVideoYT">
-                    <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" />
+                    <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarImg()"/>
                   </a>
                 </div>
                 <div class="small-img-container">
                   <a href="#mudarImg02">
                     <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo"
-                      alt="Produto" />
+                      alt="Produto" onclick="mudarImg()"/>
                   </a>
                 </div>
                 <div class="small-vid-container">
                   <a href="#mudarVideo">
-                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" />
+                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" onclick="mudarImg()"/>
                   </a>
                 </div>
               </div>
@@ -553,20 +558,22 @@
       <div class="carousel-inner">
         <div class="carousel-item active container">
           <div class="row">
-            <div class="card" style="margin-right: 1rem;">
-              <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
-                <p class="card-text"><s>R$ 157,00</s>
-                <h2>R$ 119,90</h2>
-                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
-                </p>
-                <div class="ver-mais">
-                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
-                  <a href="./pagina-produto.html">Ver mais</a>
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="card">
               <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
               <div class="card-body">
@@ -892,26 +899,28 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
-            <div class="card">
-              <div class="card-top">
-                <div class="discount">
-                  <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
-                  -30%
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
                 </div>
-                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
-              </div>
-              <div class="card-body">
-                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
-                <p class="card-text"><s>R$ 157,00</s>
-                <h2>R$ 119,90</h2>
-                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
-                </p>
-                <div class="ver-mais">
-                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
-                  <a href="./pagina-produto.html">Ver mais</a>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="card">
               <div class="card-top">
                 <!--
@@ -1727,7 +1736,6 @@
               <img class="icone-pagamento" src="./img/icones-pagamento/boleto.svg" />
             </div>
           </div>
-          <!--
         <div class="site-blindado">
           <img class="security-shield" src="./img/icones-versao-preta/secure.svg" />
           <p>
@@ -1738,7 +1746,6 @@
             </strong>
           </p>
         </div>
-      -->
         </div>
 
         <br>
@@ -1776,21 +1783,24 @@
       </div>
     </div>
 
+
     <!--footer de compra-->
     <div id="footerNav" class="bottomMenu hide">
       <nav class="footer-navbar navbar-expand-md navbar-light fixed-bottom bg-light">
           <div class="navbar-content" id="navbarCollapse">
-              <img src="./img/imgs-produto/img-produto1.png" class="img-produto-widget" alt="">
-              <h5>Nome do produto</h5>
+            <div class="navbar-content-main">
+                <img src="./img/imgs-produto/img-produto1.png" class="img-produto-widget" alt="">
+                <h3>Nome do produto</h3>
+            </div>
               <div class="preco">
                   <div class="main-preco">
                       <s>R$ 157,00</s>
-                      <h4>R$ 119,90</h4>
+                      <strong>R$ 119,90</strong>
                   </div>
                   <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
               </div>
-              <button class="btn-compra">
-                  <img src="./img/icones-versao-branca/carrinho-branco.png" class="icon-carrinho" />
+              <button class="btn-compra2">
+                  <img src="./img/icones-versao-branca/carrinho-branco.png" class="icon-carrinho2" />
                   Comprar
               </button>
           </div>

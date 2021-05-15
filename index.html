@@ -10,12 +10,18 @@
 
   <link rel="stylesheet" href="./css/style-azul.css">
 
+  
+
   <!--Link para bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 </head>
 
 <body>
+  <!--botão de voltar ao topo-->
+  <button onclick="topFunction()" id="myBtn" class="btnTop" title="Ir para o topo">^</button>
+  <script src="./js/scroll-top.js"></script>
+
   <div id="heading">
     <!--Menu superior-->
 
@@ -29,12 +35,12 @@
               <img src="./img/icones-versao-branca/options-branco.png" class="navbar-toggler" type="button"
                 data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                 aria-expanded="false" aria-label="Toggle navigation" />
-              <div class="page-title">
-                <h1 class="navbar-brand" href="#">Nome da loja</h1>
-              </div>
-              <div class="carrinho-container">
-                <img src="./img/icones-versao-branca/carrinho-branco.png" alt="carrinho" class="carrinho">
-              </div>
+                <div class="page-title">
+                  <h1 class="navbar-brand" href="#">Nome da loja</h1>
+                </div>
+                <div class="carrinho-container">
+                  <img src="./img/icones-versao-branca/carrinho-branco.png" alt="carrinho" class="carrinho">
+                </div>
             </div>
           </div>
 
@@ -100,25 +106,12 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <div class="dropdown-container">
                   <div class="dropdown-content">
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                  </div>
-                  <div class="dropdown-content">
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                  </div>
-                  <div class="dropdown-content">
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
-                    <a class="dropdown-item" href="#" style="color: black">Departamento</a>
+                    <a class="dropdown-item" href="#" style="color: black">Celular e Smartphone</a>
+                    <a class="dropdown-item" href="#" style="color: black">Eletrodomésticos</a>
+                    <a class="dropdown-item" href="#" style="color: black">TV e Vídeo</a>
+                    <a class="dropdown-item" href="#" style="color: black">Informática</a>
+                    <a class="dropdown-item" href="#" style="color: black">Móveis</a>
+                    <a class="dropdown-item" href="#" style="color: black">Automotivo</a>
                   </div>
                 </div>
               </div>
@@ -167,9 +160,16 @@
               Todos os departamentos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-container">
+                <div class="dropdown-content">
+                  <a class="dropdown-item" href="#" style="color: black">Celular e Smartphone</a>
+                  <a class="dropdown-item" href="#" style="color: black">Eletrodomésticos</a>
+                  <a class="dropdown-item" href="#" style="color: black">TV e Vídeo</a>
+                  <a class="dropdown-item" href="#" style="color: black">Informática</a>
+                  <a class="dropdown-item" href="#" style="color: black">Móveis</a>
+                  <a class="dropdown-item" href="#" style="color: black">Automotivo</a>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
@@ -1419,9 +1419,6 @@
     </div>
   </div>
   </div>
-
-
-
 
   <!--Links do bootstrap-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
