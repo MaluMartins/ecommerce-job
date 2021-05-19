@@ -38,6 +38,12 @@ button {
   padding: 0px !important;
 }
 
+@media screen and (max-width: 425px) {
+  .btnTop {
+    margin-bottom: 1rem!important;
+  }
+}
+
 /*Design da navbar*/
 @media screen and (max-width: 425px) {
   .main-nav {
@@ -96,11 +102,6 @@ button {
   align-items: center;
 }
 
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-}
-
 .navbar-collapse {
   display: flex;
   justify-content: center;
@@ -119,6 +120,47 @@ button {
   font-weight: 600;
   text-align: center;
   margin: 0 1.8rem 0 0;
+}
+
+.sidepanel0 {
+  width: 0;
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
+  background-color: rgb(233, 233, 233);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 5rem 0 0 0 !important;
+}
+
+.sidepanel0 p,
+.sidepanel0 h3 {
+  padding: 1rem;
+  color: #050505;
+  text-align: left;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel0 a:hover {
+  color: #000;
+}
+
+.sidepanel0 .closebtn {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  color: black!important;
+}
+
+.navbar-nav {
+  position: absolute;
+  display: block;
+  height: 100%!important;
+  padding: 0 0 2rem 2rem!important;
 }
 
 .navbar-toggler {
@@ -153,6 +195,20 @@ button {
 
 .nav-item a {
   color: white;
+}
+
+.nav-dept {
+  font-size: 1.5rem;
+  text-decoration: none!important;
+}
+
+.nav-dept:hover {
+  color: rgb(205, 237, 255);
+}
+
+.dropdown-menu, .dropdown-container, .dropdown-content {
+  z-index: 1000000000!important;
+  opacity: 1!important;
 }
 
 .dropdown-container {
@@ -350,11 +406,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 2rem 0 2rem !important;
+  margin: 0 .5rem 0 .5rem !important;
 }
 
 .carousel .card {
-  width: 18%;
+  width: 22%;
   height: 60%;
   border: solid rgb(150, 150, 150) 1px;
   box-shadow: 0 0 0.6em rgb(170, 170, 170);
@@ -1000,7 +1056,7 @@ table td {
 }
 
 .security {
-  padding-top: 2rem;
+  padding: 3rem 0 3rem 0;
 }
 
 .security h2 {
@@ -1044,6 +1100,7 @@ table td {
 }
 
 .pag-container {
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1141,7 +1198,7 @@ table td {
 }
 
 .info-loja {
-  padding: 3rem 0 13rem 0;
+  padding: 3rem 0 3rem 0;
   text-align: center;
   background-color: #2273b6;
 }
@@ -1149,6 +1206,22 @@ table td {
 .info-loja a {
   color: white !important;
   font-size: 1.3rem;
+}
+
+.address {
+  padding: 3rem 0 3rem 0;
+  text-align: center;
+}
+
+.address p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 425px) {
+  .info-loja {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 /*Botão de voltar ao topo*/
