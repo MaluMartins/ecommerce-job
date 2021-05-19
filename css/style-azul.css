@@ -1393,6 +1393,10 @@ table td {
     color: white!important;
     font-weight: 600;
   }
+
+  .btn-compra2 a:hover {
+    color: white!important;
+  }
 }
 
 .bottomMenu {
