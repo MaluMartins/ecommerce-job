@@ -1465,6 +1465,10 @@ table td {
   padding: 0.5rem;
 }
 
+.btn-compra2 a {
+  color: white!important;
+}
+
 .icon-carrinho2 {
   max-height: 3rem;
   max-width: 3rem;
