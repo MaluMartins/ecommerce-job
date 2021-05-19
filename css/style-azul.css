@@ -327,6 +327,7 @@ button {
   .item-departamento a,
   #navbarDropdownMenuLink {
     color: black !important;
+    font-weight: 600;
   }
 
   .color-item {
@@ -603,6 +604,7 @@ button {
 }
 
 .img-container {
+  display: block;
   width: 95%;
   background-color: white;
   border-radius: 5px;
@@ -611,7 +613,6 @@ button {
   align-items: center;
   justify-content: center !important;
 }
-
 
 #mudarVideoYT,
 #mudarImg02,
@@ -1211,6 +1212,7 @@ table td {
 .address {
   padding: 3rem 0 3rem 0;
   text-align: center;
+  color: rgb(80, 80, 80);
 }
 
 .address p {

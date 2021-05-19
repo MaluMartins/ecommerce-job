@@ -41,3 +41,13 @@ function openNav3() {
   function closeNav3() {
     document.getElementById("mySidepanel3").style.width = "0";
 }
+
+function openNav4() {
+  document.getElementById("mySidepanel4").style.width = "250px";
+  document.getElementById("mySidepanel4").style.height = "100%";
+  document.querySelector("div.body").style.position ="fixed";
+}
+
+function closeNav4() {
+  document.getElementById("mySidepanel4").style.width = "0";
+}
