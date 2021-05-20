@@ -36,6 +36,10 @@ button {
   cursor: pointer;
 }
 
+a:hover {
+  text-decoration: none!important;
+}
+
 .row,
 .container,
 #accordion {
@@ -435,10 +439,6 @@ button {
   position: absolute !important;
   left: 76% !important;
   right: inherit !important;
-}
-
-.carousel-inner {
-  height: 50rem;
 }
 
 .carousel .row {
@@ -885,8 +885,13 @@ button {
   font-size: 1.5rem;
 }
 
-.info-text p {
+.info-text {
+  text-align: center!important;
+}
+
+.info-text a {
   font-size: 1.5rem;
+  color: black!important;
 }
 
 /*Parte de informações do produto e avaliações*/
@@ -974,6 +979,10 @@ button {
 
 .avaliacoes {
   margin-right: 2rem;
+}
+
+.texto-avaliacoes {
+  color: black!important;
 }
 
 .stars-number {
