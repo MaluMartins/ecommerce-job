@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+  <title>Produto</title>
+
+  <link rel="stylesheet" href="../css/style-amarelo.css" />
+
+  <script src="./js/scroll-hide.js"></script>
+  <script src="./js/collapse-sidepanel.js"></script>
+  <script src="./js/change-img.js"></script>
+
+  <!--Link para bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+  <!--botão de voltar ao topo-->
+  <button onclick="topFunction()" id="myBtn" class="btn-top" title="Ir para o topo" style="bottom: 20%;">^</button>
+  <script src="./js/scroll-top.js"></script>
+
+  <div class="product-main">
+
+    <!--SELEÇÃO DE IMAGENS NO DESKTOP-->
+    <div class="d-none d-lg-block">
+      <div id="carouselExampleControlsFirst" class="carousel slide" data-ride="carousel" data-interval="0">
+        <div class="slide-heading">
+          <div class="setas">
+            <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+              href="#carouselExampleControlsFirst" role="button" data-slide="prev" id="prev1">
+            <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+              href="#carouselExampleControlsFirst" role="button" data-slide="next" id="next'">
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="small-img-container">
+              <a href="#mudarImg01">
+                <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto"
+                  onclick="mudarImg01()" />
+              </a>
+            </div>
+            <div class="small-yt-vid-container">
+              <a href="#mudarVideoYT">
+                <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarImg()" />
+              </a>
+            </div>
+            <div class="small-img-container">
+              <a href="#mudarImg02">
+                <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" alt="Produto"
+                  onclick="mudarImg()" />
+              </a>
+            </div>
+            <div class="small-vid-container">
+              <a href="#mudarVideo">
+                <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" onclick="mudarImg()" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="small-img-container">
+              <a href="#mudarImg01">
+                <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto"
+                  onclick="mudarImg01()" />
+              </a>
+            </div>
+            <div class="small-yt-vid-container">
+              <a href="#mudarVideoYT">
+                <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarImg()" />
+              </a>
+            </div>
+            <div class="small-img-container">
+              <a href="#mudarImg02">
+                <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" alt="Produto"
+                  onclick="mudarImg()" />
+              </a>
+            </div>
+            <div class="small-vid-container">
+              <a href="#mudarVideo">
+                <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto" onclick="mudarImg()" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-main">
+      <div class="product-container">
+        <div class="img-container">
+          <!--IMAGEM 1-->
+          <div class="main-img" id="mudarImg01">
+            <div class="fade-in-image">
+              <img src="./img/imgs-produto/img-produto1.png" class="product-img" id="mainImg">
+            </div>
+          </div>
+
+          <!--VIDEO YOUTUBE-->
+          <div class="main-yt-video" id="mudarVideoYT">
+            <div class="fade-in-image">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--IMAGEM 2-->
+          <div class="main-img2" id="mudarImg02">
+            <div class="fade-in-image">
+              <img src="./img/imgs-produto/img-produto2.png" class="product-img">
+            </div>
+          </div>
+
+          <!--VIDEO-->
+          <div class="main-video" id="mudarVideo">
+            <div class="fade-in-image">
+              <video width="100%" height="100%" controls>
+                <source src="./videos/magalu.mp4" type="video/mp4" class="product-img">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-description">
+      <div class="title-share">
+        <div class="product-title">
+          <h2 class="title">TÍTULO DO PRODUTO</h2>
+          <h3>Breve descrição do produto</h3>
+        </div>
+
+        <div class="share">
+          <div class="card-header" id="headingZero">
+            <img src="./img/icones-versao-preta/share.svg" class="btn btn-link collapsed" data-toggle="collapse"
+              data-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+          </div>
+          <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
+            <div class="collapse-share">
+              <div class="share-card-body">
+                <img src="./img/redes-sociais/facebook.svg" class="media-icon" alt="Facebook">
+                <img src="./img/redes-sociais/instagram.svg" class="media-icon" alt="Instagram">
+                <img src="./img/redes-sociais/twitter.svg" class="media-icon" alt="Twitter">
+                <img src="./img/redes-sociais/whatsapp.svg" class="media-icon" alt="Whatsapp">
+                <img src="./img/redes-sociais/telegram.svg" class="media-icon" alt="Telegram">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="heading">
+        <div class="star-text">
+          <div class="estrelas">
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+          </div>
+
+          <p class="texto-avaliacoes">1.329 avaliações</p>
+        </div>
+
+      </div>
+
+      <!--SELEÇÃO DE IMAGEM NO MOBILE-->
+      <div class="small-product-container d-lg-none">
+        <div id="carouselExampleControls0" class="carousel slide" data-ride="carousel" data-interval="0">
+          <div class="slide-heading">
+            <div class="setas">
+              <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+                href="#carouselExampleControls0" role="button" data-slide="prev">
+              <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+                href="#carouselExampleControls0" role="button" data-slide="next">
+            </div>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="select-img">
+                <div class="small-img-container">
+                  <a href="#mudarImg01">
+                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto"
+                      onclick="mudarImg01()" />
+                  </a>
+                </div>
+                <div class="small-yt-vid-container">
+                  <a href="#mudarVideoYT">
+                    <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto"
+                      value="mudar para video do YT" onclick="mudarImg()" />
+                  </a>
+                </div>
+                <div class="small-img-container">
+                  <a href="#mudarImg02">
+                    <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" alt="Produto"
+                      onclick="mudarImg()" />
+                  </a>
+                </div>
+                <div class="small-vid-container">
+                  <a href="#mudarVideo">
+                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto"
+                      onclick="mudarImg()" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="select-img">
+                <div class="small-img-container">
+                  <a href="#mudarImg01">
+                    <img src="./img/imgs-produto/img-produto1.png" class="small-product-img" alt="Produto"
+                      onclick="mudarImg01()" />
+                  </a>
+                </div>
+                <div class="small-yt-vid-container">
+                  <a href="#mudarVideoYT">
+                    <img src="./img/imgs-produto/videoYT.png" class="small-yt-vid" alt="Produto" onclick="mudarImg()" />
+                  </a>
+                </div>
+                <div class="small-img-container">
+                  <a href="#mudarImg02">
+                    <img src="./img/imgs-produto/2img-produto.png" class="small-product-imgTwo" alt="Produto"
+                      onclick="mudarImg()" />
+                  </a>
+                </div>
+                <div class="small-vid-container">
+                  <a href="#mudarVideo">
+                    <img src="./img/imgs-produto/video.png" class="small-product-imgTwo" alt="Produto"
+                      onclick="mudarImg()" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container-pagamento">
+        <s>De R$ 167,00</s>
+        <p>por <strong class="preco">R$ 119,90</strong></p>
+        <div class="container-preco">
+          <div class="card-img-container">
+            <img src="./img/icones-versao-preta/credit-card.png" class="credit-card" alt="Cartão de Crédito" />
+          </div>
+          <div class="pagamento">
+            <p>até <strong>6x</strong> de <strong>R$ 19,90</strong> sem juros</p>
+            <a href="#">Mais formas de pagamento</a>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn-compra">
+          <img src="./img/icones-versao-branca/carrinho-branco.png" class="icon-carrinho" />
+          Comprar
+        </button>
+      </div>
+      <div class="buttons">
+        <button class="btn-carrinho">
+          <img src="./img/icones-versao-preta/carrinho.png" class="icon-carrinho" />
+          Adicionar ao carrinho
+        </button>
+      </div>
+
+      <div class="info-text">
+        <p>96.57% das pessoas recomendam o produto</p>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <div class="product-description">
+    <h3>Descrição</h3>
+    <hr class="desc-hr">
+    <p>Descrição do produto</p>
+</div>
+
+      
+
+  <!--INFORMAÇÕES DO PRODUTO NO MOBILE-->
+  <div class="info-mobile d-lg-none">
+
+    <div class="info-content">
+      <div id="mySidepanel2" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
+        <h3>Informações</h3>
+        <p>Texto de informações do produto </p>
+      </div>
+
+      <button class="openbtn" onclick="openNav2()">
+        <div class="info-text"> Informações do produto </div>
+        <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" />
+      </button>
+    </div>
+
+    <div class="info-content">
+      <div id="mySidepanel3" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
+        <h3>Informações técnicas</h3>
+        <div class="table">
+          <table>
+            <tr>
+              <th>Informações técnicas</th>
+            </tr>
+            <tr>
+              <td>Cor</td>
+              <td>Preto</td>
+            </tr>
+            <tr>
+              <td>Dimensões - Altura</td>
+              <td>210 cm</td>
+            </tr>
+            <tr>
+              <td>Dimensões - Largura</td>
+              <td>260 cm</td>
+            </tr>
+            <tr>
+              <td>Dimensões - profundidade</td>
+              <td>52 cm no balcão e 31 cm no aéreo</td>
+            </tr>
+            <tr>
+              <td>Garantia</td>
+              <td>3 meses</td>
+            </tr>
+            <tr>
+              <td>Marca</td>
+              <td>Madesa</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>MDP</td>
+            </tr>
+            <tr>
+              <td>Peso aproximado</td>
+              <td>100 kg</td>
+            </tr>
+            <tr>
+              <td>Produto</td>
+              <td>Cozinha</td>
+            </tr>
+            <tr>
+              <th>Informações completares</th>
+            </tr>
+            <br><br>
+            <tr>
+              <td>Componentes</td>
+              <td>Armário, Balcão</td>
+            </tr>
+            <tr>
+              <td>Cor</td>
+              <td>Preto, Rústico</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <button class="openbtn" onclick="openNav3()">
+        <div class="info-text"> Ficha técnica </div>
+        <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" />
+      </button>
+    </div>
+
+    <div class="info-content">
+      <div id="mySidepanel4" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">×</a>
+        <h3>Avaliações de clientes</h3>
+        <div class="comments">
+          <div class="comment-container">
+            <div class="comment">
+              <div class="estrelas">
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+              </div>
+              Nome - há 3 dias atrás
+              <h3>Avaliação</h3>
+              <p>Comentário sobre o produto</p>
+              <p class="good">Sim, eu recomendo este produto</p>
+            </div>
+          </div>
+          <hr>
+          <div class="comment-container">
+            <div class="comment">
+              <div class="estrelas">
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+                <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+              </div>
+              Nome - há 3 dias atrás
+              <h3>Avaliação</h3>
+              <p>Comentário sobre o produto</p>
+              <p class="bad">Não, eu não recomendo este produto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="openbtn" onclick="openNav4()">
+        <div class="info-text"> Avaliações de clientes </div>
+        <img src="img/icones-versao-preta/seta-direita.svg" class="info-toggler" />
+      </button>
+    </div>
+    <div class="avaliacoes-info">
+      <div class="avaliacoes">
+        <div class="main-avaliacao">
+          <h1>4.5</h1>
+          <img src="./img/estrelas/estrela.svg" class="big-star" alt="Estrela">
+        </div>
+        <p>1.329 avaliações</p>
+      </div>
+
+
+      <div class="stars-number">
+        <p>5 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra3.png" class="barra-avaliacao" alt=""> </p>
+        <p>4 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra2.png" class="barra-avaliacao" alt=""> </p>
+        <p>3 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+        <p>2 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+        <p>1 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+      </div>
+    </div>
+  </div>
+
+  <!--INFORMAÇÕES NO DESKTOP-->
+  <div class="info-desktop d-none d-lg-block">
+    <h3 class="info-title">Informações do produto</h3>
+    <p>Texto de informações do produto...</p>
+    <h3 class="info-title">Ficha técnica</h3>
+    <p class="th-title">Informações técnicas</p>
+    <table>
+      <tr>
+        <td>Cor</td>
+        <td>Preto</td>
+      </tr>
+      <tr>
+        <td>Dimensões - Altura</td>
+        <td>210 cm</td>
+      </tr>
+      <tr>
+        <td>Dimensões - Largura</td>
+        <td>260 cm</td>
+      </tr>
+      <tr>
+        <td>Dimensões - profundidade</td>
+        <td>52 cm no balcão e 31 cm no aéreo</td>
+      </tr>
+      <tr>
+        <td>Garantia</td>
+        <td>3 meses</td>
+      </tr>
+      <tr>
+        <td>Marca</td>
+        <td>Madesa</td>
+      </tr>
+      <tr>
+        <td>Material</td>
+        <td>MDP</td>
+      </tr>
+      <tr>
+        <td>Peso aproximado</td>
+        <td>100 kg</td>
+      </tr>
+      <tr>
+        <td>Produto</td>
+        <td>Cozinha</td>
+      </tr>
+    </table>
+    <p class="th-title">Informações completares</p>
+    <table>
+      <tr>
+        <td>Componentes</td>
+        <td>Armário, Balcão</td>
+      </tr>
+      <tr>
+        <td>Cor</td>
+        <td>Preto, Rústico</td>
+      </tr>
+    </table>
+
+    <h3 class="info-title">Avaliações dos clientes</h3>
+    <div class="avaliacoes-info">
+      <div class="avaliacoes">
+        <div class="main-avaliacao">
+          <h1>4.5</h1>
+          <img src="./img/estrelas/estrela.svg" class="big-star" alt="Estrela">
+        </div>
+        <p>1.329 avaliações</p>
+      </div>
+
+
+      <div class="stars-number">
+        <p>5 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra3.png" class="barra-avaliacao" alt=""> </p>
+        <p>4 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra2.png" class="barra-avaliacao" alt=""> </p>
+        <p>3 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+        <p>2 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+        <p>1 <img src="./img/estrelas/estrela-preta.png" class="estrela" alt="Estrela"> <img
+            src="./img/barras-avaliacao/barra1.png" class="barra-avaliacao" alt=""> </p>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="comment-container">
+        <div class="comment">
+          <div class="estrelas">
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+          </div>
+          Nome - há 3 dias atrás
+          <h3>Avaliação</h3>
+          <p>Comentário sobre o produto</p>
+          <p class="good">Sim, eu recomendo este produto</p>
+        </div>
+        <div class="statistics-container">
+          <div class="statistics-content">
+            Design
+            <div class="barra">
+              <span class="barra-interior" style="width: 75%"></span>
+            </div>
+          </div>
+          <br><br>
+          <div class="statistics-content">
+            Custo benefício
+            <div class="barra">
+              <span class="barra-interior" style="width: 80%"></span>
+            </div>
+          </div>
+          <br><br>
+          <div class="statistics-content">
+            Qualidade geral
+            <div class="barra">
+              <span class="barra-interior" style="width: 100%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="comment-container">
+        <div class="comment">
+          <div class="estrelas">
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/estrela.svg" alt="Estrela" class="estrela" />
+            <img src="./img/estrelas/meia-estrela.svg" alt="Meia estrela" class="meia-estrela" />
+          </div>
+          Nome - há 3 dias atrás
+          <h3>Avaliação</h3>
+          <p>Comentário sobre o produto</p>
+          <p class="bad">Não, eu não recomendo este produto</p>
+        </div>
+        <div class="statistics-container">
+          <div class="statistics-content">
+            Design
+            <div class="barra">
+              <span class="barra-interior" style="width: 60%"></span>
+            </div>
+          </div>
+          <br><br>
+          <div class="statistics-content">
+            Custo benefício
+            <div class="barra">
+              <span class="barra-interior" style="width: 50%"></span>
+            </div>
+          </div>
+          <br><br>
+          <div class="statistics-content">
+            Qualidade geral
+            <div class="barra">
+              <span class="barra-interior" style="width: 40%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--CARROSSEL DE CARDS NO MOBILE-->
+  <div class="d-lg-none">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 1</h1>
+        <hr class="title-hr">
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+            href="#carouselExampleControls" role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+            href="#carouselExampleControls" role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 2</h1>
+        <hr class="title-hr">
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+            href="#carouselExampleControls2" role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+            href="#carouselExampleControls2" role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 3</h1>
+        <hr class="title-hr">
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+            href="#carouselExampleControls3" role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+            href="#carouselExampleControls3" role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item container">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--CARROSSEL DE CARDS NO DESKTOP-->
+  <div class="d-none d-lg-block">
+    <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 1</h1>
+        <hr class="title-hr">
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+            href="#carouselExampleControls4" role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+            href="#carouselExampleControls4" role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel" data-interval="0">
+      <div class="slide-heading">
+        <h1>Categoria 2</h1>
+        <hr class="title-hr">
+        <div class="setas">
+          <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+            href="#carouselExampleControls5" role="button" data-slide="prev">
+          <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+            href="#carouselExampleControls5" role="button" data-slide="next">
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <a href="./pagina-produto.html">
+              <div class="card" style="margin-right: 1rem;">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <div class="discount">
+                    <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                    -30%
+                  </div>
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./pagina-produto.html">
+              <div class="card">
+                <div class="card-top">
+                  <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                  <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                  <p class="card-text"><s>R$ 157,00</s>
+                  <h2>R$ 119,90</h2>
+                  <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                  </p>
+                  <div class="ver-mais">
+                    <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                    <a href="./pagina-produto.html">Ver mais</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel" data-interval="0">
+    <div class="slide-heading">
+      <h1>Categoria 3</h1>
+      <hr class="title-hr">
+      <div class="setas">
+        <img src="./img/icones-versao-preta/seta-esquerda.svg" class="carousel-control-prev"
+          href="#carouselExampleControls6" role="button" data-slide="prev">
+        <img src="./img/icones-versao-preta/seta-direita.svg" class="carousel-control-next"
+          href="#carouselExampleControls6" role="button" data-slide="next">
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <div class="discount">
+                  <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                  -30%
+                </div>
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <div class="discount">
+                  <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                  -30%
+                </div>
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <a href="./pagina-produto.html">
+            <div class="card" style="margin-right: 1rem;">
+              <div class="card-top">
+                <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <div class="discount">
+                  <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                  -30%
+                </div>
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <div class="discount">
+                  <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                  -30%
+                </div>
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pagina-produto.html">
+            <div class="card">
+              <div class="card-top">
+                <!--
+                    <div class="discount">
+                      <img src="./img/icones-versao-branca/down-arrow-branca.svg" class="seta-desconto">
+                      -30%
+                    </div>
+                  -->
+                <img class="card-img-top" src="./img/imgs-produto/img-produto1.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title"> <a href="./pagina-produto.html">Título do produto</a></h4>
+                <p class="card-text"><s>R$ 157,00</s>
+                <h2>R$ 119,90</h2>
+                <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+                </p>
+                <div class="ver-mais">
+                  <img class="icon-lupa" src="./img/icones-versao-branca/lupa-branca.svg" alt="Ver mais">
+                  <a href="./pagina-produto.html">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--DUVIDAS-->
+  <div class="duvidas">
+    <h1>DÚVIDAS FREQUENTES</h1>
+
+    <div id="accordion" class="d-inline">
+      <div class="accordion1">
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingOne">
+            <h5>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingFour">
+            <h5>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                aria-controls="collapseFour">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="false" aria-controls="collapseFive">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion2">
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                aria-expanded="false" aria-controls="collapseSix">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingSeven">
+            <h5>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
+                aria-controls="collapseSeven">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingEight">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                aria-expanded="false" aria-controls="collapseEight">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingNine">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                aria-expanded="false" aria-controls="collapseNine">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 100%">
+          <div class="card-header" id="headingTen">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                aria-expanded="false" aria-controls="collapseTen">
+                <div class="btn-content">
+                  <div class="btn-text"> Dúvida </div>
+                  <div class="btn-plus"> + </div>
+                </div>
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+              moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+              shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+              proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="security">
+      <h4>Você não é acostumado</h4>
+      <h2>A COMPRAR PELA INTERNET?</h2>
+
+      <div class="security-content">
+        <div class="security-container1">
+          <div class="security-item">
+            <img class="security-icon" src="./img/icones-versao-branca/safe-box-branco.svg" alt="">
+            <p><strong>Dados sigilosos </strong>e não compartilhados.</p>
+          </div>
+          <div class="security-item">
+            <img class="security-icon" src="./img/icones-versao-branca/lock-branco.svg" alt="">
+            <p><strong>Dados financeiros </strong>secretos e protegidos.</p>
+          </div>
+        </div>
+        <div class="security-container2">
+          <div class="security-item">
+            <img class="security-icon" src="./img/icones-versao-branca/shield-branco.svg" alt="">
+            <p><strong>Site 100% confiável </strong>e autenticados por empresas de segurança.</p>
+          </div>
+          <div class="security-item">
+            <img class="security-icon" src="./img/icones-versao-branca/cargo-truck-branco.svg" alt="">
+            <p><strong>Entrega garantida no prazo </strong>combinado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerTwo">
+      <div class="pag-container">
+        <div class="pagamento">
+          <p class="titulo-pagamento">Formas de <strong>Pagamento</strong> </p>
+          <div class="formas-pagamento">
+            <img class="icone-pagamento" src="./img/icones-pagamento/pix.png" />
+            <img class="icone-pagamento" src="./img/icones-pagamento/mastercard.svg" />
+            <img class="icone-pagamento" src="./img/icones-pagamento/visa.svg" />
+            <img class="icone-pagamento" src="./img/icones-pagamento/boleto.svg" />
+          </div>
+        </div>
+        <div class="site-blindado">
+          <img class="security-shield" src="./img/icones-versao-preta/secure.svg" />
+          <p>
+            <strong>
+              Site blindado
+              <br>
+              Compra segura
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <div class="footer-btns">
+        <button class="blue-btn"><strong>ACOMPANHAR PEDIDO</strong></button>
+      </div>
+      <div class="footer-btns">
+        <button class="green-btn">
+          <img class="wpp-btn" src="./img/icones-versao-preta/whatsapp.svg" />
+          <strong>
+            ATENDIMENTO VIA WHATSAPP
+            <br>
+            CLIQUE AQUI
+          </strong>
+        </button>
+      </div>
+      <!--
+      <div class="redes-sociais">
+        <h2>CONHEÇA NOSSAS REDES SOCIAIS</h2>
+        <div class="social-links">
+          <a><strong>blog</strong></a>
+          <img class="social-icon" src="./img/icones-versao-preta/instagram.svg" />
+          <img class="social-icon" src="./img/icones-versao-preta/facebook.svg" />
+          <img class="social-icon" src="./img/icones-versao-preta/youtube.svg" />
+        </div>
+      </div>
+      -->
+
+      <div class="info-loja">
+        <a href="#">Política de Privacidade</a> <br><br>
+        <a href="#">Termos Gerais</a> <br><br>
+        <a href="#">Política de Devolução e Reembolso</a> <br><br>
+        <a href="#">Fale conosco</a> <br><br>
+      </div>
+      <div class="address" style="padding-bottom: 13rem">
+        <h4>Endereço da Empresa</h4>
+        <p>Endereço da empresa</p>
+        <p>Endereço da empresa</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--footer de compra-->
+  <div id="footerNav" class="bottomMenu hide">
+    <nav class="footer-navbar navbar-expand-md navbar-light fixed-bottom bg-light">
+      <div class="navbar-content" id="navbarCollapse">
+        <div class="navbar-content-main">
+          <img src="./img/imgs-produto/img-produto1.png" class="img-produto-widget" alt="">
+          <h3>Nome do produto</h3>
+        </div>
+        <div class="preco">
+          <div class="main-preco">
+            <s>R$ 157,00</s>
+            <strong>R$ 119,90</strong>
+          </div>
+          <p>Até <strong>6x</strong> de <strong>R$ 19,98</strong></p>
+        </div>
+        <button class="btn-compra2">
+          <img src="./img/icones-versao-branca/carrinho-branco.png" class="icon-carrinho2" />
+          <a href="#"> Comprar </a>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!--Links do bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
