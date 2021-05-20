@@ -662,6 +662,7 @@ button {
 
 #mudarVideoYT,
 #mudarImg02,
+#mudarImg03,
 #mudarVideo {
   display: none;
 }
@@ -669,6 +670,7 @@ button {
 #mudarImg01:target,
 #mudarVideoYT:target,
 #mudarImg02:target,
+#mudarImg03:target,
 #mudarVideo:target {
   display: block;
 }
