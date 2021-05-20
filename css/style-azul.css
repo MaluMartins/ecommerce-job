@@ -89,6 +89,10 @@ button {
   justify-content: center!important;
 }
 
+.navbar-brand:hover {
+  color: white!important;
+}
+
 .main-nav {
   width: 100%;
   display: flex;
@@ -433,6 +437,10 @@ button {
   right: inherit !important;
 }
 
+.carousel-inner {
+  height: 50rem;
+}
+
 .carousel .row {
   display: flex;
   align-items: center;
@@ -441,11 +449,20 @@ button {
 }
 
 .carousel .card {
-  width: 22%;
+  width: 21%;
   height: 60%;
   border: solid rgb(150, 150, 150) 1px;
   box-shadow: 0 0 0.6em rgb(170, 170, 170);
+  margin-top: 2.5rem;
   cursor: pointer;
+  transition: transform .2s;
+}
+
+.carousel .card:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+  z-index: 1000000000000!important;
 }
 
 .card-top .discount {
@@ -496,6 +513,8 @@ button {
 
 .ver-mais a {
   color: white !important;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .icon-lupa {
@@ -1082,6 +1101,10 @@ table td {
   display: flex !important;
   align-items: center;
   justify-content: space-evenly;
+}
+
+#accordion .card-header {
+  border: none!important;
 }
 
 .accordion1,
