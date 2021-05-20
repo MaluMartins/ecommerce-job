@@ -664,7 +664,7 @@ button {
 #mudarImg02,
 #mudarImg03,
 #mudarVideo {
-  display: none;
+  display: none!important;
 }
 
 #mudarImg01:target,
@@ -672,7 +672,7 @@ button {
 #mudarImg02:target,
 #mudarImg03:target,
 #mudarVideo:target {
-  display: block;
+  display: block!important;
 }
 
 #mudarVideoYT:target {
