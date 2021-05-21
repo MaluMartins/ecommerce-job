@@ -36,6 +36,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: 0!important;
+}
+
 a:hover {
   text-decoration: none!important;
 }
@@ -1124,9 +1128,6 @@ table td {
   justify-content: space-evenly;
 }
 
-#accordion .card-header {
-  border: none!important;
-}
 
 .accordion1,
 .accordion2 {
