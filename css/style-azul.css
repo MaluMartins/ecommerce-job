@@ -612,6 +612,10 @@ a:hover {
 
 /*Botão de compartilhar*/
 
+.share {
+  margin-top: 1.5rem;
+}
+
 .share #collapseZero {
   position: absolute;
   z-index: 999 !important;
@@ -672,11 +676,14 @@ a:hover {
   width: 95%;
   height: 46rem;
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 0.5em rgb(126, 126, 126);
   display: flex;
   align-items: center;
   justify-content: center !important;
+}
+
+.product-img {
+  max-height: 46rem;
+  max-width: 46rem;
 }
 
 #mudarVideoYT,
