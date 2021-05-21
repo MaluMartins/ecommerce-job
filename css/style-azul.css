@@ -453,19 +453,24 @@ a:hover {
   height: 60%;
   border: solid rgb(150, 150, 150) 1px;
   box-shadow: 0 0 0.6em rgb(170, 170, 170);
-  margin-top: 2.5rem;
   cursor: pointer;
   transition: transform .2s;
 }
 
-.carousel .card:hover {
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1); 
-  transform: scale(1.1); 
-  z-index: 1000000000000!important;
+@media (min-width: 425px) {
+  .carousel .card {
+    margin: 3rem 0 1.5rem 0;
+  }
+
+  .carousel .card:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+    z-index: 1000000000000!important;
+  }
 }
 
-.card-top .discount {
+.discount {
   background-color: #2273b6;
   position: absolute;
   color: white;
