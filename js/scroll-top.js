@@ -1,4 +1,4 @@
-//botão d voltar ao topo
+//botão de voltar ao topo
 var mybutton = document.getElementById("myBtn");
 
 // mostrar o botão ao rolar

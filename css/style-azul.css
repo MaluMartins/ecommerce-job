@@ -463,7 +463,7 @@ a:hover {
 
 @media (min-width: 425px) {
   .carousel .card {
-    margin: 3rem 0 1.5rem 0;
+    margin: 3rem 0 2.5rem 0;
   }
 
   .carousel .card:hover {
@@ -538,7 +538,6 @@ a:hover {
   align-items: center;
   justify-content: space-evenly;
   margin: 2rem;
-  padding-top: 2rem;
 }
 
 .container-main,
@@ -676,41 +675,38 @@ a:hover {
 
 @media screen and (max-width: 425px) {
   .img-container {
-    height: 28rem !important;
+    height: 28rem;
   }
 }
 
 .img-container {
-  display: block;
-  width: 95%;
+  display: flex;
+  width: 46rem;
   height: 46rem;
   background-color: white;
-  display: flex;
-  align-items: center;
+  align-items: center!important;
   justify-content: center !important;
 }
 
-.product-img {
-  max-height: 46rem;
-  max-width: 46rem;
+@media screen and (min-width: 425px) {
+  .img-container img, .img-container video {
+    width: 46rem!important;
+  }
 }
 
-#mudarVideoYT,
-#mudarImg02,
-#mudarImg03,
-#mudarVideo {
-  display: none!important;
+@media screen and (max-width: 425px) {
+  .img-container {
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .img-container img, .img-container video {
+    width: 25rem!important;
+  }
 }
 
-#mudarImg01:target,
-#mudarVideoYT:target,
-#mudarImg02:target,
-#mudarImg03:target,
-#mudarVideo:target {
-  display: block!important;
-}
 
-#mudarVideoYT:target {
+.main-yt-video {
   width: 100%;
   z-index: 1000000;
 }
@@ -722,6 +718,7 @@ a:hover {
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -999,6 +996,12 @@ a:hover {
 
 .texto-avaliacoes {
   color: black!important;
+}
+
+.avaliacoes-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
 }
 
 .stars-number {
