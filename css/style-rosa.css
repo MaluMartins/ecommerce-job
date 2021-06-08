@@ -1179,6 +1179,10 @@ table td {
   justify-content: space-between !important;
 }
 
+.btn-plus, .btn-text {
+  color: #f875aa!important;
+}
+
 .btn-plus {
   font-size: 2rem;
   padding-bottom: 1rem;
